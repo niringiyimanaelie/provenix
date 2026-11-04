@@ -10,7 +10,7 @@
     {
       "role": "home_intro",
       "section": "home",
-      "label": "Homepage introduction",
+      "label": "Home - Main introduction at the top of the page",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_002"],
@@ -41,7 +41,7 @@
     {
       "role": "home_capabilities",
       "section": "home",
-      "label": "Capabilities introduction",
+      "label": "Home - Introduction above the three service cards",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_041"],
@@ -68,7 +68,7 @@
     {
       "role": "home_story",
       "section": "home",
-      "label": "Our approach",
+      "label": "Home - Our approach: less time untangling",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_061"],
@@ -95,7 +95,7 @@
     {
       "role": "home_process",
       "section": "home",
-      "label": "Process introduction",
+      "label": "Home - Heading above the three process steps",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_067"],
@@ -114,7 +114,7 @@
     {
       "role": "home_connect",
       "section": "home",
-      "label": "Process: connect",
+      "label": "Home - Process step 1: connect your SQL",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_070"],
@@ -133,7 +133,7 @@
     {
       "role": "home_understand",
       "section": "home",
-      "label": "Process: understand",
+      "label": "Home - Process step 2: understand relationships",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_073"],
@@ -152,7 +152,7 @@
     {
       "role": "home_explore",
       "section": "home",
-      "label": "Process: explore",
+      "label": "Home - Process step 3: explore your data",
       "fields": {
         "surtitre": {
           "keys": ["sommaire_076"],
@@ -171,7 +171,7 @@
     {
       "role": "about_intro",
       "section": "about",
-      "label": "About us introduction",
+      "label": "About us - Main introduction at the top of the page",
       "fields": {
         "surtitre": {
           "keys": ["about_002"],
@@ -194,7 +194,7 @@
     {
       "role": "about_mission",
       "section": "about",
-      "label": "Why we are building",
+      "label": "About us - Why we are building Provenix",
       "fields": {
         "surtitre": {
           "keys": ["about_006"],
@@ -217,7 +217,7 @@
     {
       "role": "about_values",
       "section": "about",
-      "label": "Values introduction",
+      "label": "About us - Heading introducing our values",
       "fields": {
         "surtitre": {
           "keys": ["about_012"],
@@ -232,7 +232,7 @@
     {
       "role": "about_evidence",
       "section": "about",
-      "label": "Value: evidence",
+      "label": "About us - Value: evidence and traceability",
       "fields": {
         "titre": {
           "keys": ["about_014"],
@@ -247,7 +247,7 @@
     {
       "role": "about_readability",
       "section": "about",
-      "label": "Value: readability",
+      "label": "About us - Value: making SQL easier to understand",
       "fields": {
         "titre": {
           "keys": ["about_016"],
@@ -262,7 +262,7 @@
     {
       "role": "about_questions",
       "section": "about",
-      "label": "Value: questions",
+      "label": "About us - Value: helping people ask questions",
       "fields": {
         "titre": {
           "keys": ["about_018"],
@@ -277,7 +277,7 @@
     {
       "role": "about_today",
       "section": "about",
-      "label": "Where we are today",
+      "label": "About us - Current stage of Provenix",
       "fields": {
         "surtitre": {
           "keys": ["about_020"],
@@ -304,7 +304,7 @@
     {
       "role": "services_intro",
       "section": "services",
-      "label": "Services introduction",
+      "label": "Services - Main introduction at the top of the page",
       "fields": {
         "surtitre": {
           "keys": ["services_002"],
@@ -327,7 +327,7 @@
     {
       "role": "lineage",
       "section": "service_catalogue",
-      "label": "Service: lineage",
+      "label": "Home + Services - Data lineage card and service details",
       "fields": {
         "surtitre": {
           "keys": ["services_006"],
@@ -363,7 +363,7 @@
     {
       "role": "analysis",
       "section": "service_catalogue",
-      "label": "Service: analysis",
+      "label": "Home + Services - SQL analysis card and service details",
       "fields": {
         "surtitre": {
           "keys": ["services_015"],
@@ -399,7 +399,7 @@
     {
       "role": "exploration",
       "section": "service_catalogue",
-      "label": "Service: exploration",
+      "label": "Home + Services - Visual discovery card and service details",
       "fields": {
         "surtitre": {
           "keys": ["services_027"],
@@ -435,7 +435,7 @@
     {
       "role": "services_closing",
       "section": "services",
-      "label": "Services closing message",
+      "label": "Services - Closing message below the service details",
       "fields": {
         "surtitre": {
           "keys": ["services_036"],
@@ -458,7 +458,7 @@
     {
       "role": "contact_intro",
       "section": "contact",
-      "label": "Contact introduction",
+      "label": "Contact - Main introduction at the top of the page",
       "fields": {
         "surtitre": {
           "keys": ["contact_002"],
@@ -481,7 +481,7 @@
     {
       "role": "contact_details",
       "section": "contact",
-      "label": "Contact information",
+      "label": "Contact - Contact information beside the form",
       "fields": {
         "surtitre": {
           "keys": ["contact_006"],
@@ -504,7 +504,7 @@
     {
       "role": "contact_question",
       "section": "contact",
-      "label": "Conversation starter",
+      "label": "Contact - Conversation prompt beside the form",
       "fields": {
         "titre": {
           "keys": ["contact_012"],

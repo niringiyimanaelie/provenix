@@ -107,3 +107,14 @@ comparison snapshots in `tmp/` while using `tools/verify_cms.py`.
 A clean Git repository excludes generated files and secrets; the working site
 still needs its installed dependencies and runtime folders. Deleting those
 folders merely to make the file explorer shorter can break the site.
+
+## Internal article labels
+
+The Website content directory and each mapped section show descriptive labels
+such as "Home - Main introduction at the top of the page". Open an article to
+see its "Where this article appears" guide. These labels are private editing
+guidance, separate from the public article title; changing a public title does
+not change its assigned position. Labels are defined in the plugin's
+`article-plan.json` and do not require an additional article database field.
+The guide covers the 22 mapped articles; newly added service articles still
+appear in SPIP's normal article list.
