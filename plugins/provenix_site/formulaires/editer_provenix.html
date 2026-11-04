@@ -1,23 +1,51 @@
 <div class="formulaire_spip formulaire_editer_provenix">
-  [<p class="reponse_formulaire reponse_formulaire_ok" role="status">(#ENV*{message_ok})</p>]
-  [<p class="reponse_formulaire reponse_formulaire_erreur" role="alert">(#ENV*{message_erreur})</p>]
+  [
+  <p class="reponse_formulaire reponse_formulaire_ok" role="status">
+    (#ENV*{message_ok})
+  </p>
+  ]
+  [
+  <p class="reponse_formulaire reponse_formulaire_erreur" role="alert">
+    (#ENV*{message_erreur})
+  </p>
+  ]
   <form action="#ENV{action}" method="post">
     #ACTION_FORMULAIRE
     <BOUCLE_sections(DATA){source tableau,#ENV{sections}}>
-    <fieldset style="margin-bottom:24px"><legend>[(#CLE|entites_html)]</legend>
-      <div class="editer-groupe">
-        <BOUCLE_fields(DATA){source tableau,#VALEUR}>
-        #SET{field,#VALEUR{key}}
-        <div class="editer[ (#ENV{erreurs/#GET{field}}|oui)erreur]">
-          <label for="px-#GET{field}">[(#VALEUR{label}|entites_html)]</label>
-          [<span class="erreur_message">(#ENV{erreurs/#GET{field}})</span>]
-          [(#VALEUR{type}|=={textarea}|oui)<textarea class="textarea" id="px-#GET{field}" name="#GET{field}" rows="4" maxlength="6000">[(#ENV{#GET{field}})]</textarea>]
-          [(#VALEUR{type}|=={textarea}|non)<input class="text" id="px-#GET{field}" name="#GET{field}" type="[(#VALEUR{type}|=={email}|?{email,text})]" value="[(#ENV{#GET{field}})]" maxlength="6000">]
+      <fieldset style="margin-bottom:24px">
+        <legend>[(#CLE|entites_html)]</legend>
+        <div class="editer-groupe">
+          <BOUCLE_fields(DATA){source tableau,#VALEUR}>
+            #SET{field,#VALEUR{key}}
+            <div class="editer[ (#ENV{erreurs/#GET{field}}|oui)erreur]">
+              <label for="px-#GET{field}">
+                [(#VALEUR{label}|entites_html)]
+              </label>
+              [<span class="erreur_message">(#ENV{erreurs/#GET{field}})</span>]
+              [(#VALEUR{type}|=={textarea}|oui)
+                <textarea
+                  class="textarea"
+                  id="px-#GET{field}"
+                  name="#GET{field}"
+                  rows="4"
+                  maxlength="6000">[(#ENV{#GET{field}})]</textarea>
+              ]
+              [(#VALEUR{type}|=={textarea}|non)
+              <input
+                class="text"
+                id="px-#GET{field}"
+                name="#GET{field}"
+                type="[(#VALEUR{type}|=={email}|?{email,text})]"
+                value="[(#ENV{#GET{field}})]"
+                maxlength="6000">
+              ]
+            </div>
+          </BOUCLE_fields>
         </div>
-        </BOUCLE_fields>
-      </div>
-    </fieldset>
+      </fieldset>
     </BOUCLE_sections>
-    <p class="boutons"><button class="btn submit" type="submit">Save and publish changes</button></p>
+    <p class="boutons">
+      <button class="btn submit" type="submit">Save and publish changes</button>
+    </p>
   </form>
 </div>

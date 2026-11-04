@@ -1,21 +1,41 @@
 [(#AUTORISER{configurer}|sinon_interdire_acces)]
-<h1>Provenix website content</h1>
-<p>Main page content is now managed as native SPIP articles. Select a page below, then click an article to edit it. The theme preserves the existing website design.</p>
-<p>Use the article's title, subtitle, description, introduction and body fields. For homepage introductions, the description is the purple heading. Save edits in the article editor; its publication status controls visibility.</p>
-<div class="onglets_simple clearfix"><ul>
-<BOUCLE_tabs(DATA){source tableau,#VAL{''}|provenix_groupes}>
-<li><a href="[(#URL_ECRIRE{provenix_contenu}|parametre_url{groupe,#CLE})]" [class="(#ENV{groupe,home}|=={#CLE}|oui)on"]>[(#VALEUR|entites_html)]</a></li>
-</BOUCLE_tabs>
-</ul></div>
+<h1>
+  Provenix website content
+</h1>
+<p>
+  Main page content is now managed as native SPIP articles. Select a page below, then click an article to edit it. The theme preserves the existing website design.
+</p>
+<p>
+  Use the article's title, subtitle, description, introduction and body fields. For homepage introductions, the description is the purple heading. Save edits in the article editor; its publication status controls visibility.
+</p>
+<div class="onglets_simple clearfix">
+  <ul>
+    <BOUCLE_tabs(DATA){source tableau,#VAL{''}|provenix_groupes}>
+      <li>
+        <a href="[(#URL_ECRIRE{provenix_contenu}|parametre_url{groupe,#CLE})]" [class="(#ENV{groupe,home}|=={#CLE}|oui)on"]>[(#VALEUR|entites_html)]</a>
+      </li>
+    </BOUCLE_tabs>
+  </ul>
+</div>
 <B_articles>
-<h2>Page articles</h2>
-<ul>
-<BOUCLE_articles(DATA){source tableau,#ENV{groupe,home}|provenix_article_directory}>
-<li><a href="[(#URL_ECRIRE{article}|parametre_url{id_article,#VALEUR{id}})]"><strong>[(#VALEUR{label}|entites_html)]</strong> — [(#VALEUR{titre}|entites_html)]</a> <small>(#VALEUR{statut})</small></li>
-</BOUCLE_articles>
-</ul>
+  <h2>
+    Page articles
+  </h2>
+  <ul>
+    <BOUCLE_articles(DATA){source tableau,#ENV{groupe,home}|provenix_article_directory}>
+      <li>
+        <a href="[(#URL_ECRIRE{article}|parametre_url{id_article,#VALEUR{id}})]"><strong>[(#VALEUR{label}|entites_html)]</strong> — [(#VALEUR{titre}|entites_html)]</a> <small>(#VALEUR{statut})</small>
+      </li>
+    </BOUCLE_articles>
+  </ul>
 </B_articles>
-<h2>Page settings</h2>
-<p>These settings cover labels, illustrations, and form text. Shared content contains navigation, footer, search description, contact email, and the shared contact banner. Saving settings publishes them immediately.</p>
+<h2>
+  Page settings
+</h2>
+<p>
+  These settings cover labels, illustrations, and form text. Shared content contains navigation, footer, search description, contact email, and the shared contact banner. Saving settings publishes them immediately.
+</p>
 #FORMULAIRE_EDITER_PROVENIX{#ENV{groupe,home}}
-<p><a href="#URL_SITE_SPIP" target="_blank" rel="noopener">View website ↗</a></p>
+<p>
+  <a href="#URL_SITE_SPIP" target="_blank" rel="noopener">View website ↗</a>
+</p>

@@ -1,1 +1,37 @@
-<!DOCTYPE html><html lang="en"><head><BOUCLE_title(RUBRIQUES){id_rubrique}><title>[(#TITRE|textebrut)] — #NOM_SITE_SPIP</title></BOUCLE_title><INCLURE{fond=inc-head}></head><body><INCLURE{fond=inc-header}><main id="main"><BOUCLE_section(RUBRIQUES){id_rubrique}><section class="page-hero"><div class="wrap"><h1>#TITRE</h1>#TEXTE</div></section><section class="section"><div class="wrap feature-grid"><BOUCLE_pages(ARTICLES){id_rubrique}{par num titre,id_article}><article class="feature"><h2><a href="#URL_ARTICLE">#TITRE</a></h2>#DESCRIPTIF</article></BOUCLE_pages></div></section></BOUCLE_section></main><INCLURE{fond=inc-footer}></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BOUCLE_title(RUBRIQUES){id_rubrique}>
+      <title>[(#TITRE|textebrut)] — #NOM_SITE_SPIP</title>
+    </BOUCLE_title>
+    <INCLURE{fond=inc-head}>
+  </head>
+  <body>
+    <INCLURE{fond=inc-header}>
+    <main id="main">
+      <BOUCLE_section(RUBRIQUES){id_rubrique}>
+        <section class="page-hero">
+          <div class="wrap">
+            <h1>
+              #TITRE
+            </h1>
+            #TEXTE
+          </div>
+        </section>
+        <section class="section">
+          <div class="wrap feature-grid">
+            <BOUCLE_pages(ARTICLES){id_rubrique}{par num titre,id_article}>
+              <article class="feature">
+                <h2>
+                  <a href="#URL_ARTICLE">#TITRE</a>
+                </h2>
+                #DESCRIPTIF
+              </article>
+            </BOUCLE_pages>
+          </div>
+        </section>
+      </BOUCLE_section>
+    </main>
+    <INCLURE{fond=inc-footer}>
+  </body>
+</html>

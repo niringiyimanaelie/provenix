@@ -66,3 +66,19 @@ Fonts use Google Fonts with local system-font fallbacks. No application credenti
 CMS saves invalidate the cache. After changing theme code, use SPIP's cache maintenance controls or reload with `var_mode=recalcul` while logged in as an administrator if needed.
 
 Git excludes SPIP runtime files, uploads, local credentials, and installed core directories. A deployment needs a matching SPIP installation and separately managed database/uploads; this repository is not a complete site backup.
+
+## Reading and formatting the source
+
+Start with `squelettes/sommaire.html` for the homepage layout, and
+`squelettes/assets/site.css` for its appearance. The other page templates sit
+beside `sommaire.html`; reusable page parts use the `inc-` prefix.
+
+Templates use two-space indentation; PHP and Python use four spaces.
+`.editorconfig` records these conventions. The workspace's VS Code settings
+turn on word wrap so long CMS expressions and text values fit the editor.
+Press **Alt+Z** to toggle word wrap. Wrapping in the editor does not change files.
+
+Keep adjacent inline elements together when whitespace affects the displayed
+text, such as the dot after the brand name. Keep SPIP expressions intact when
+formatting templates. The formatting of source files is separate from the
+content edited in `/ecrire/` and does not change database records.

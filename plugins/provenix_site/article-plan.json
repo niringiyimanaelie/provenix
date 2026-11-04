@@ -13,39 +13,27 @@
       "label": "Homepage introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_002"
-          ],
+          "keys": ["sommaire_002"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_003"
-          ],
+          "keys": ["sommaire_003"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "sommaire_004"
-          ],
+          "keys": ["sommaire_004"],
           "separator": "\n"
         },
         "descriptif": {
-          "keys": [
-            "sommaire_005"
-          ],
+          "keys": ["sommaire_005"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "sommaire_006"
-          ],
+          "keys": ["sommaire_006"],
           "separator": "\n"
         },
         "ps": {
-          "keys": [
-            "sommaire_009"
-          ],
+          "keys": ["sommaire_009"],
           "separator": "\n"
         }
       }
@@ -56,33 +44,23 @@
       "label": "Capabilities introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_041"
-          ],
+          "keys": ["sommaire_041"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_042"
-          ],
+          "keys": ["sommaire_042"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "sommaire_043"
-          ],
+          "keys": ["sommaire_043"],
           "separator": "\n"
         },
         "descriptif": {
-          "keys": [
-            "sommaire_044"
-          ],
+          "keys": ["sommaire_044"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "sommaire_045"
-          ],
+          "keys": ["sommaire_045"],
           "separator": "\n"
         }
       }
@@ -93,34 +71,23 @@
       "label": "Our approach",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_061"
-          ],
+          "keys": ["sommaire_061"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_062"
-          ],
+          "keys": ["sommaire_062"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "sommaire_063"
-          ],
+          "keys": ["sommaire_063"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "sommaire_064",
-            "sommaire_065"
-          ],
+          "keys": ["sommaire_064", "sommaire_065"],
           "separator": "\n\n"
         },
         "nom_site": {
-          "keys": [
-            "sommaire_066"
-          ],
+          "keys": ["sommaire_066"],
           "separator": "\n"
         }
       }
@@ -131,21 +98,15 @@
       "label": "Process introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_067"
-          ],
+          "keys": ["sommaire_067"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_068"
-          ],
+          "keys": ["sommaire_068"],
           "separator": "\n"
         },
         "nom_site": {
-          "keys": [
-            "sommaire_069"
-          ],
+          "keys": ["sommaire_069"],
           "separator": "\n"
         }
       }
@@ -156,21 +117,15 @@
       "label": "Process: connect",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_070"
-          ],
+          "keys": ["sommaire_070"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_071"
-          ],
+          "keys": ["sommaire_071"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "sommaire_072"
-          ],
+          "keys": ["sommaire_072"],
           "separator": "\n\n"
         }
       }
@@ -181,21 +136,15 @@
       "label": "Process: understand",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_073"
-          ],
+          "keys": ["sommaire_073"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_074"
-          ],
+          "keys": ["sommaire_074"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "sommaire_075"
-          ],
+          "keys": ["sommaire_075"],
           "separator": "\n\n"
         }
       }
@@ -206,21 +155,15 @@
       "label": "Process: explore",
       "fields": {
         "surtitre": {
-          "keys": [
-            "sommaire_076"
-          ],
+          "keys": ["sommaire_076"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "sommaire_077"
-          ],
+          "keys": ["sommaire_077"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "sommaire_078"
-          ],
+          "keys": ["sommaire_078"],
           "separator": "\n\n"
         }
       }
@@ -231,27 +174,19 @@
       "label": "About us introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "about_002"
-          ],
+          "keys": ["about_002"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "about_003"
-          ],
+          "keys": ["about_003"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "about_004"
-          ],
+          "keys": ["about_004"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "about_005"
-          ],
+          "keys": ["about_005"],
           "separator": "\n"
         }
       }
@@ -262,29 +197,19 @@
       "label": "Why we are building",
       "fields": {
         "surtitre": {
-          "keys": [
-            "about_006"
-          ],
+          "keys": ["about_006"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "about_007"
-          ],
+          "keys": ["about_007"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "about_008"
-          ],
+          "keys": ["about_008"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "about_009",
-            "about_010",
-            "about_011"
-          ],
+          "keys": ["about_009", "about_010", "about_011"],
           "separator": "\n\n"
         }
       }
@@ -295,15 +220,11 @@
       "label": "Values introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "about_012"
-          ],
+          "keys": ["about_012"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "about_013"
-          ],
+          "keys": ["about_013"],
           "separator": "\n"
         }
       }
@@ -314,15 +235,11 @@
       "label": "Value: evidence",
       "fields": {
         "titre": {
-          "keys": [
-            "about_014"
-          ],
+          "keys": ["about_014"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "about_015"
-          ],
+          "keys": ["about_015"],
           "separator": "\n\n"
         }
       }
@@ -333,15 +250,11 @@
       "label": "Value: readability",
       "fields": {
         "titre": {
-          "keys": [
-            "about_016"
-          ],
+          "keys": ["about_016"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "about_017"
-          ],
+          "keys": ["about_017"],
           "separator": "\n\n"
         }
       }
@@ -352,15 +265,11 @@
       "label": "Value: questions",
       "fields": {
         "titre": {
-          "keys": [
-            "about_018"
-          ],
+          "keys": ["about_018"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "about_019"
-          ],
+          "keys": ["about_019"],
           "separator": "\n\n"
         }
       }
@@ -371,34 +280,23 @@
       "label": "Where we are today",
       "fields": {
         "surtitre": {
-          "keys": [
-            "about_020"
-          ],
+          "keys": ["about_020"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "about_021"
-          ],
+          "keys": ["about_021"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "about_022"
-          ],
+          "keys": ["about_022"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "about_023",
-            "about_024"
-          ],
+          "keys": ["about_023", "about_024"],
           "separator": "\n\n"
         },
         "nom_site": {
-          "keys": [
-            "about_025"
-          ],
+          "keys": ["about_025"],
           "separator": "\n"
         }
       }
@@ -409,27 +307,19 @@
       "label": "Services introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "services_002"
-          ],
+          "keys": ["services_002"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "services_003"
-          ],
+          "keys": ["services_003"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "services_004"
-          ],
+          "keys": ["services_004"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "services_005"
-          ],
+          "keys": ["services_005"],
           "separator": "\n"
         }
       }
@@ -440,48 +330,32 @@
       "label": "Service: lineage",
       "fields": {
         "surtitre": {
-          "keys": [
-            "services_006"
-          ],
+          "keys": ["services_006"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "services_007"
-          ],
+          "keys": ["services_007"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "services_008"
-          ],
+          "keys": ["services_008"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "services_009",
-            "services_010",
-            "services_011"
-          ],
+          "keys": ["services_009", "services_010", "services_011"],
           "separator": "\n\n",
           "list": true
         },
         "soustitre": {
-          "keys": [
-            "sommaire_046"
-          ],
+          "keys": ["sommaire_046"],
           "separator": "\n"
         },
         "descriptif": {
-          "keys": [
-            "sommaire_047"
-          ],
+          "keys": ["sommaire_047"],
           "separator": "\n"
         },
         "nom_site": {
-          "keys": [
-            "sommaire_048"
-          ],
+          "keys": ["sommaire_048"],
           "separator": "\n"
         }
       }
@@ -492,48 +366,32 @@
       "label": "Service: analysis",
       "fields": {
         "surtitre": {
-          "keys": [
-            "services_015"
-          ],
+          "keys": ["services_015"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "services_016"
-          ],
+          "keys": ["services_016"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "services_017"
-          ],
+          "keys": ["services_017"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "services_018",
-            "services_019",
-            "services_020"
-          ],
+          "keys": ["services_018", "services_019", "services_020"],
           "separator": "\n\n",
           "list": true
         },
         "soustitre": {
-          "keys": [
-            "sommaire_049"
-          ],
+          "keys": ["sommaire_049"],
           "separator": "\n"
         },
         "descriptif": {
-          "keys": [
-            "sommaire_050"
-          ],
+          "keys": ["sommaire_050"],
           "separator": "\n"
         },
         "nom_site": {
-          "keys": [
-            "sommaire_051"
-          ],
+          "keys": ["sommaire_051"],
           "separator": "\n"
         }
       }
@@ -544,48 +402,32 @@
       "label": "Service: exploration",
       "fields": {
         "surtitre": {
-          "keys": [
-            "services_027"
-          ],
+          "keys": ["services_027"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "services_028"
-          ],
+          "keys": ["services_028"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "services_029"
-          ],
+          "keys": ["services_029"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "services_030",
-            "services_031",
-            "services_032"
-          ],
+          "keys": ["services_030", "services_031", "services_032"],
           "separator": "\n\n",
           "list": true
         },
         "soustitre": {
-          "keys": [
-            "sommaire_052"
-          ],
+          "keys": ["sommaire_052"],
           "separator": "\n"
         },
         "descriptif": {
-          "keys": [
-            "sommaire_053"
-          ],
+          "keys": ["sommaire_053"],
           "separator": "\n"
         },
         "nom_site": {
-          "keys": [
-            "sommaire_054"
-          ],
+          "keys": ["sommaire_054"],
           "separator": "\n"
         }
       }
@@ -596,27 +438,19 @@
       "label": "Services closing message",
       "fields": {
         "surtitre": {
-          "keys": [
-            "services_036"
-          ],
+          "keys": ["services_036"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "services_037"
-          ],
+          "keys": ["services_037"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "services_038"
-          ],
+          "keys": ["services_038"],
           "separator": "\n\n"
         },
         "nom_site": {
-          "keys": [
-            "services_039"
-          ],
+          "keys": ["services_039"],
           "separator": "\n"
         }
       }
@@ -627,27 +461,19 @@
       "label": "Contact introduction",
       "fields": {
         "surtitre": {
-          "keys": [
-            "contact_002"
-          ],
+          "keys": ["contact_002"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "contact_003"
-          ],
+          "keys": ["contact_003"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "contact_004"
-          ],
+          "keys": ["contact_004"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "contact_005"
-          ],
+          "keys": ["contact_005"],
           "separator": "\n"
         }
       }
@@ -658,28 +484,19 @@
       "label": "Contact information",
       "fields": {
         "surtitre": {
-          "keys": [
-            "contact_006"
-          ],
+          "keys": ["contact_006"],
           "separator": "\n"
         },
         "titre": {
-          "keys": [
-            "contact_007"
-          ],
+          "keys": ["contact_007"],
           "separator": "\n"
         },
         "soustitre": {
-          "keys": [
-            "contact_008"
-          ],
+          "keys": ["contact_008"],
           "separator": "\n"
         },
         "chapo": {
-          "keys": [
-            "contact_010",
-            "contact_011"
-          ],
+          "keys": ["contact_010", "contact_011"],
           "separator": "\n"
         }
       }
@@ -690,15 +507,11 @@
       "label": "Conversation starter",
       "fields": {
         "titre": {
-          "keys": [
-            "contact_012"
-          ],
+          "keys": ["contact_012"],
           "separator": "\n"
         },
         "texte": {
-          "keys": [
-            "contact_013"
-          ],
+          "keys": ["contact_013"],
           "separator": "\n\n"
         }
       }

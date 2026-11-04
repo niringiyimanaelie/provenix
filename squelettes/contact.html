@@ -1,1 +1,96 @@
-<!DOCTYPE html><html lang="en"><head><title>[(#VAL{contact_001}|provenix_texte)]</title><INCLURE{fond=inc-head}></head><body data-page="contact"><INCLURE{fond=inc-header}><main id="main"><section class="page-hero"><div class="wrap"><span class="eyebrow">[(#VAL{contact_002}|provenix_texte)]</span><h1>[(#VAL{contact_003}|provenix_texte)]<br><em>[(#VAL{contact_004}|provenix_texte)]</em></h1><p>[(#VAL{contact_005}|provenix_texte)]</p></div></section><section class="section contact-section"><div class="wrap contact-grid"><div><span class="eyebrow">[(#VAL{contact_006}|provenix_texte)]</span><h2>[(#VAL{contact_007}|provenix_texte)]<br>[(#VAL{contact_008}|provenix_texte)]</h2><a class="contact-email" href="mailto:[(#VAL{contact_email}|provenix_texte)]">[(#VAL{contact_email}|provenix_texte)] ↗</a><p class="muted">[(#VAL{contact_010}|provenix_texte)]<br>[(#VAL{contact_011}|provenix_texte)]</p><div class="contact-aside"><span>[(#VAL{contact_012}|provenix_texte)]</span><p>[(#VAL{contact_013}|provenix_texte)]</p></div></div><form id="contact-form" class="contact-form"><h3>[(#VAL{contact_014}|provenix_texte)]</h3><p>[(#VAL{contact_015}|provenix_texte)]</p><div class="form-row"><label>[(#VAL{contact_016}|provenix_texte)] <input name="name" autocomplete="name" required maxlength="100" placeholder="[(#VAL{contact_017}|provenix_texte)]"></label><label>[(#VAL{contact_018}|provenix_texte)] <input name="email" type="email" autocomplete="email" required maxlength="200" placeholder="[(#VAL{contact_019}|provenix_texte)]"></label></div><label>[(#VAL{contact_020}|provenix_texte)] <span class="optional">[(#VAL{contact_021}|provenix_texte)]</span><input name="company" autocomplete="organization" maxlength="160" placeholder="[(#VAL{contact_022}|provenix_texte)]"></label><label>[(#VAL{contact_023}|provenix_texte)]<select name="topic"><option>[(#VAL{contact_024}|provenix_texte)]</option><option>[(#VAL{contact_025}|provenix_texte)]</option><option>[(#VAL{contact_026}|provenix_texte)]</option><option>[(#VAL{contact_027}|provenix_texte)]</option></select></label><label>[(#VAL{contact_028}|provenix_texte)]<textarea name="message" required minlength="10" maxlength="4000" rows="5" placeholder="[(#VAL{contact_029}|provenix_texte)]"></textarea></label><button class="button" type="submit">[(#VAL{contact_030}|provenix_texte)] <span>↗</span></button><p class="form-note">[(#VAL{contact_031}|provenix_texte)]</p><p id="contact-status" role="status" hidden></p></form></div></section></main><INCLURE{fond=inc-footer}></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>[(#VAL{contact_001}|provenix_texte)]</title>
+    <INCLURE{fond=inc-head}>
+  </head>
+  <body data-page="contact">
+    <INCLURE{fond=inc-header}>
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <span class="eyebrow">[(#VAL{contact_002}|provenix_texte)]</span>
+          <h1>
+            [(#VAL{contact_003}|provenix_texte)]<br>
+            <em>[(#VAL{contact_004}|provenix_texte)]</em>
+          </h1>
+          <p>
+            [(#VAL{contact_005}|provenix_texte)]
+          </p>
+        </div>
+      </section>
+      <section class="section contact-section">
+        <div class="wrap contact-grid">
+          <div>
+            <span class="eyebrow">[(#VAL{contact_006}|provenix_texte)]</span>
+            <h2>
+              [(#VAL{contact_007}|provenix_texte)]<br>
+              [(#VAL{contact_008}|provenix_texte)]
+            </h2>
+            <a class="contact-email" href="mailto:[(#VAL{contact_email}|provenix_texte)]">[(#VAL{contact_email}|provenix_texte)] ↗</a>
+            <p class="muted">
+              [(#VAL{contact_010}|provenix_texte)]<br>
+              [(#VAL{contact_011}|provenix_texte)]
+            </p>
+            <div class="contact-aside">
+              <span>[(#VAL{contact_012}|provenix_texte)]</span>
+              <p>
+                [(#VAL{contact_013}|provenix_texte)]
+              </p>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <h3>
+              [(#VAL{contact_014}|provenix_texte)]
+            </h3>
+            <p>
+              [(#VAL{contact_015}|provenix_texte)]
+            </p>
+            <div class="form-row">
+              <label>
+                [(#VAL{contact_016}|provenix_texte)]
+                <input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="100"
+                  placeholder="[(#VAL{contact_017}|provenix_texte)]">
+              </label>
+              <label>
+                [(#VAL{contact_018}|provenix_texte)]
+                <input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  maxlength="200"
+                  placeholder="[(#VAL{contact_019}|provenix_texte)]">
+              </label>
+            </div>
+            <label>
+              [(#VAL{contact_020}|provenix_texte)]<span class="optional">[(#VAL{contact_021}|provenix_texte)]</span>
+              <input
+                name="company"
+                autocomplete="organization"
+                maxlength="160"
+                placeholder="[(#VAL{contact_022}|provenix_texte)]">
+            </label>
+            <label>
+              [(#VAL{contact_023}|provenix_texte)]<select name="topic"><option>[(#VAL{contact_024}|provenix_texte)]</option><option>[(#VAL{contact_025}|provenix_texte)]</option><option>[(#VAL{contact_026}|provenix_texte)]</option><option>[(#VAL{contact_027}|provenix_texte)]</option></select>
+            </label>
+            <label>
+              [(#VAL{contact_028}|provenix_texte)]<textarea name="message" required minlength="10" maxlength="4000" rows="5" placeholder="[(#VAL{contact_029}|provenix_texte)]"></textarea>
+            </label>
+            <button class="button" type="submit">[(#VAL{contact_030}|provenix_texte)] <span>↗</span></button>
+            <p class="form-note">
+              [(#VAL{contact_031}|provenix_texte)]
+            </p>
+            <p id="contact-status" role="status" hidden>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <INCLURE{fond=inc-footer}>
+  </body>
+</html>
