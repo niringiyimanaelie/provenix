@@ -1,9 +1,10 @@
+const settings = document.querySelector('script[data-provenix]')?.dataset || {};
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#navigation');
 toggle?.addEventListener('click', () => {
   const open = toggle.getAttribute('aria-expanded') !== 'true';
   toggle.setAttribute('aria-expanded', String(open));
-  toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  toggle.setAttribute('aria-label', open ? settings.menuClose : settings.menuOpen);
   nav.classList.toggle('is-open', open);
 });
 document.addEventListener('keydown', event => {
@@ -17,10 +18,10 @@ document.querySelectorAll('nav [data-page]').forEach(link => {
 document.querySelector('#contact-form')?.addEventListener('submit', event => {
   event.preventDefault();
   const data = new FormData(event.currentTarget);
-  const body = `Name: ${data.get('name')}\nEmail: ${data.get('email')}\nCompany: ${data.get('company') || 'Not provided'}\n\n${data.get('message')}`;
-  const subject = `Provenix enquiry: ${data.get('topic')}`;
-  window.location.href = `mailto:info@getprovenix.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const body = `${settings.emailName} ${data.get('name')}\n${settings.emailAddress} ${data.get('email')}\n${settings.emailCompany} ${data.get('company') || settings.emailEmptyCompany}\n\n${data.get('message')}`;
+  const subject = `${settings.emailSubject} ${data.get('topic')}`;
+  window.location.href = `mailto:${encodeURIComponent(settings.contactEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   const status = document.querySelector('#contact-status');
   status.hidden = false;
-  status.textContent = 'Your email app has been requested. If nothing opens, email info@getprovenix.com directly. Your message has not been sent by this website.';
+  status.textContent = settings.emailStatus.replaceAll('{email}', settings.contactEmail);
 });

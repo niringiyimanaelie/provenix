@@ -1,0 +1,1465 @@
+[
+  {
+    "key": "contact_email",
+    "group": "shared",
+    "section": "Contact address",
+    "label": "Public contact email",
+    "type": "email"
+  },
+  {
+    "key": "about_001",
+    "group": "about",
+    "section": "Page title and accessibility",
+    "label": "Browser title: About us — Provenix",
+    "type": "text"
+  },
+  {
+    "key": "about_002",
+    "group": "about",
+    "section": "Page introduction",
+    "label": "Text: ABOUT PROVENIX",
+    "type": "text"
+  },
+  {
+    "key": "about_003",
+    "group": "about",
+    "section": "Page introduction",
+    "label": "Main heading: Data is complex.",
+    "type": "text"
+  },
+  {
+    "key": "about_004",
+    "group": "about",
+    "section": "Page introduction",
+    "label": "Text: Understanding it shouldn’t be.",
+    "type": "text"
+  },
+  {
+    "key": "about_005",
+    "group": "about",
+    "section": "Page introduction",
+    "label": "Paragraph: We’re building Provenix to make the relationships and logic behind data visible, unde",
+    "type": "textarea"
+  },
+  {
+    "key": "about_006",
+    "group": "about",
+    "section": "Page content",
+    "label": "Text: WHY WE’RE BUILDING",
+    "type": "text"
+  },
+  {
+    "key": "about_007",
+    "group": "about",
+    "section": "Page content",
+    "label": "Section heading: Good decisions start",
+    "type": "text"
+  },
+  {
+    "key": "about_008",
+    "group": "about",
+    "section": "Page content",
+    "label": "Section heading: with clear context.",
+    "type": "text"
+  },
+  {
+    "key": "about_009",
+    "group": "about",
+    "section": "Page content",
+    "label": "Paragraph: SQL contains a wealth of knowledge: where data originates, how it changes, and what g",
+    "type": "textarea"
+  },
+  {
+    "key": "about_010",
+    "group": "about",
+    "section": "Page content",
+    "label": "Paragraph: When a new analyst joins, a calculation changes, or a number looks wrong, teams have ",
+    "type": "textarea"
+  },
+  {
+    "key": "about_011",
+    "group": "about",
+    "section": "Page content",
+    "label": "Paragraph: Provenix turns SQL into a connected view of sources, transformations, and outputs. Ou",
+    "type": "textarea"
+  },
+  {
+    "key": "about_012",
+    "group": "about",
+    "section": "Our values",
+    "label": "Text: WHAT GUIDES US",
+    "type": "text"
+  },
+  {
+    "key": "about_013",
+    "group": "about",
+    "section": "Our values",
+    "label": "Section heading: Clarity, built from the source.",
+    "type": "text"
+  },
+  {
+    "key": "about_014",
+    "group": "about",
+    "section": "Our values",
+    "label": "Heading: Start with the evidence",
+    "type": "text"
+  },
+  {
+    "key": "about_015",
+    "group": "about",
+    "section": "Our values",
+    "label": "Paragraph: Extract relationships and formulas from SQL structure. Keep the explanation connected",
+    "type": "textarea"
+  },
+  {
+    "key": "about_016",
+    "group": "about",
+    "section": "Our values",
+    "label": "Heading: Make complexity readable",
+    "type": "text"
+  },
+  {
+    "key": "about_017",
+    "group": "about",
+    "section": "Our values",
+    "label": "Paragraph: Bring detailed technical context into a visual experience that supports investigation",
+    "type": "textarea"
+  },
+  {
+    "key": "about_018",
+    "group": "about",
+    "section": "Our values",
+    "label": "Heading: Build with real questions",
+    "type": "text"
+  },
+  {
+    "key": "about_019",
+    "group": "about",
+    "section": "Our values",
+    "label": "Paragraph: Focus on the everyday work of understanding pipelines, reviewing calculations, and on",
+    "type": "textarea"
+  },
+  {
+    "key": "about_020",
+    "group": "about",
+    "section": "Page content",
+    "label": "Text: WHERE WE ARE TODAY",
+    "type": "text"
+  },
+  {
+    "key": "about_021",
+    "group": "about",
+    "section": "Page content",
+    "label": "Section heading: A focused product.",
+    "type": "text"
+  },
+  {
+    "key": "about_022",
+    "group": "about",
+    "section": "Page content",
+    "label": "Section heading: A bigger ambition.",
+    "type": "text"
+  },
+  {
+    "key": "about_023",
+    "group": "about",
+    "section": "Page content",
+    "label": "Paragraph: Provenix is in active development. Today, our work centers on SQL analysis, column-le",
+    "type": "textarea"
+  },
+  {
+    "key": "about_024",
+    "group": "about",
+    "section": "Page content",
+    "label": "Paragraph: Our longer-term ambition is to connect that technical foundation to richer business c",
+    "type": "textarea"
+  },
+  {
+    "key": "about_025",
+    "group": "about",
+    "section": "Page content",
+    "label": "Link label: Share your perspective →",
+    "type": "text"
+  },
+  {
+    "key": "contact_001",
+    "group": "contact",
+    "section": "Page title and accessibility",
+    "label": "Browser title: Contact us — Provenix",
+    "type": "text"
+  },
+  {
+    "key": "contact_002",
+    "group": "contact",
+    "section": "Page introduction",
+    "label": "Text: CONTACT US",
+    "type": "text"
+  },
+  {
+    "key": "contact_003",
+    "group": "contact",
+    "section": "Page introduction",
+    "label": "Main heading: Good conversations",
+    "type": "text"
+  },
+  {
+    "key": "contact_004",
+    "group": "contact",
+    "section": "Page introduction",
+    "label": "Text: start with a question.",
+    "type": "text"
+  },
+  {
+    "key": "contact_005",
+    "group": "contact",
+    "section": "Page introduction",
+    "label": "Paragraph: Curious about Provenix? Tell us what you’re working on. We’d love to understand your ",
+    "type": "textarea"
+  },
+  {
+    "key": "contact_006",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Text: LET’S TALK",
+    "type": "text"
+  },
+  {
+    "key": "contact_007",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Section heading: A direct line",
+    "type": "text"
+  },
+  {
+    "key": "contact_008",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Section heading: to Provenix.",
+    "type": "text"
+  },
+  {
+    "key": "contact_010",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Paragraph: For product questions, walkthroughs,",
+    "type": "text"
+  },
+  {
+    "key": "contact_011",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Paragraph: feedback, and collaboration.",
+    "type": "text"
+  },
+  {
+    "key": "contact_012",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Text: NOT SURE WHERE TO START?",
+    "type": "text"
+  },
+  {
+    "key": "contact_013",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Paragraph: Tell us which SQL platform you use and what you wish you could understand better abou",
+    "type": "text"
+  },
+  {
+    "key": "contact_014",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Heading: Tell us a little about yourself",
+    "type": "text"
+  },
+  {
+    "key": "contact_015",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Paragraph: We’ll prepare an email in your preferred mail app.",
+    "type": "text"
+  },
+  {
+    "key": "contact_016",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Form label: Your name",
+    "type": "text"
+  },
+  {
+    "key": "contact_017",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Placeholder: Alex Morgan",
+    "type": "text"
+  },
+  {
+    "key": "contact_018",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Form label: Work email",
+    "type": "text"
+  },
+  {
+    "key": "contact_019",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Placeholder: alex@company.com",
+    "type": "text"
+  },
+  {
+    "key": "contact_020",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Form label: Company",
+    "type": "text"
+  },
+  {
+    "key": "contact_021",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Text: (optional)",
+    "type": "text"
+  },
+  {
+    "key": "contact_022",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Placeholder: Your company",
+    "type": "text"
+  },
+  {
+    "key": "contact_023",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Form label: What would you like to discuss?",
+    "type": "text"
+  },
+  {
+    "key": "contact_024",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Topic option: Product walkthrough",
+    "type": "text"
+  },
+  {
+    "key": "contact_025",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Topic option: SQL and data lineage",
+    "type": "text"
+  },
+  {
+    "key": "contact_026",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Topic option: Partnership or collaboration",
+    "type": "text"
+  },
+  {
+    "key": "contact_027",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Topic option: General question",
+    "type": "text"
+  },
+  {
+    "key": "contact_028",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Form label: Your message",
+    "type": "text"
+  },
+  {
+    "key": "contact_029",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Placeholder: Tell us about your project or the question you’re trying to answer…",
+    "type": "text"
+  },
+  {
+    "key": "contact_030",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Text: Prepare email",
+    "type": "text"
+  },
+  {
+    "key": "contact_031",
+    "group": "contact",
+    "section": "Contact details and form",
+    "label": "Paragraph: This form opens your email app. Your message is only sent when you choose Send there.",
+    "type": "text"
+  },
+  {
+    "key": "inc_cta_001",
+    "group": "shared",
+    "section": "Call to action",
+    "label": "Text: LET’S CONNECT THE DOTS",
+    "type": "text"
+  },
+  {
+    "key": "inc_cta_002",
+    "group": "shared",
+    "section": "Call to action",
+    "label": "Section heading: Make sense of what’s",
+    "type": "text"
+  },
+  {
+    "key": "inc_cta_003",
+    "group": "shared",
+    "section": "Call to action",
+    "label": "Section heading: behind your data.",
+    "type": "text"
+  },
+  {
+    "key": "inc_cta_004",
+    "group": "shared",
+    "section": "Call to action",
+    "label": "Paragraph: Tell us about your team, your SQL, and the questions you’re trying to answer.",
+    "type": "text"
+  },
+  {
+    "key": "inc_cta_005",
+    "group": "shared",
+    "section": "Call to action",
+    "label": "Link label: Start a conversation",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_001",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Text: PX",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_002",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Text: provenix.",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_003",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Paragraph: Clarity behind every column.",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_004",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Text: EXPLORE",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_005",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Link label: About us",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_006",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Link label: Services",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_007",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Text: GET IN TOUCH",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_009",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Link label: Start a conversation",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_010",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Text: Provenix. All rights reserved.",
+    "type": "text"
+  },
+  {
+    "key": "inc_footer_011",
+    "group": "shared",
+    "section": "Footer",
+    "label": "Text: Built for a clearer understanding of data.",
+    "type": "text"
+  },
+  {
+    "key": "inc_head_001",
+    "group": "shared",
+    "section": "Search engine description",
+    "label": "Content: Provenix makes SQL lineage understandable. Explore where your data comes from, how it",
+    "type": "textarea"
+  },
+  {
+    "key": "inc_header_001",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Link label: Skip to content",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_002",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Aria label: Provenix home",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_003",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Text: PX",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_004",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Text: provenix",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_005",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Aria label: Open navigation",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_006",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Text: Menu",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_007",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Aria label: Main navigation",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_008",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Link label: Home",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_009",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Link label: About us",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_010",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Link label: Services",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_011",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Link label: Contact",
+    "type": "text"
+  },
+  {
+    "key": "inc_header_012",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Link label: Let’s talk",
+    "type": "text"
+  },
+  {
+    "key": "services_001",
+    "group": "services",
+    "section": "Page title and accessibility",
+    "label": "Browser title: Services & capabilities — Provenix",
+    "type": "text"
+  },
+  {
+    "key": "services_002",
+    "group": "services",
+    "section": "Page introduction",
+    "label": "Text: SERVICES & CAPABILITIES",
+    "type": "text"
+  },
+  {
+    "key": "services_003",
+    "group": "services",
+    "section": "Page introduction",
+    "label": "Main heading: Get closer to",
+    "type": "text"
+  },
+  {
+    "key": "services_004",
+    "group": "services",
+    "section": "Page introduction",
+    "label": "Text: the meaning of your data.",
+    "type": "text"
+  },
+  {
+    "key": "services_005",
+    "group": "services",
+    "section": "Page introduction",
+    "label": "Paragraph: Explore how Provenix helps teams investigate SQL, follow dependencies, and communicat",
+    "type": "textarea"
+  },
+  {
+    "key": "services_006",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: 01 / TRACE",
+    "type": "text"
+  },
+  {
+    "key": "services_007",
+    "group": "services",
+    "section": "Page content",
+    "label": "Section heading: Data lineage exploration",
+    "type": "text"
+  },
+  {
+    "key": "services_008",
+    "group": "services",
+    "section": "Page content",
+    "label": "Paragraph: Follow the journey from source tables to final outputs. Understand which columns cont",
+    "type": "textarea"
+  },
+  {
+    "key": "services_009",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Table and column-level dependencies",
+    "type": "text"
+  },
+  {
+    "key": "services_010",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Relationships across SQL files",
+    "type": "text"
+  },
+  {
+    "key": "services_011",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: CTEs, subqueries, and intermediate transformations",
+    "type": "text"
+  },
+  {
+    "key": "services_012",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: source",
+    "type": "text"
+  },
+  {
+    "key": "services_013",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: transformation",
+    "type": "text"
+  },
+  {
+    "key": "services_014",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: understanding",
+    "type": "text"
+  },
+  {
+    "key": "services_015",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: 02 / EXPLAIN",
+    "type": "text"
+  },
+  {
+    "key": "services_016",
+    "group": "services",
+    "section": "Page content",
+    "label": "Section heading: SQL transformation analysis",
+    "type": "text"
+  },
+  {
+    "key": "services_017",
+    "group": "services",
+    "section": "Page content",
+    "label": "Paragraph: Look beyond a column’s name to understand how it is calculated. Inspect the expressio",
+    "type": "textarea"
+  },
+  {
+    "key": "services_018",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Calculations and aggregation formulas",
+    "type": "text"
+  },
+  {
+    "key": "services_019",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Join logic and filtering conditions",
+    "type": "text"
+  },
+  {
+    "key": "services_020",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: SQL-like and mathematical formula views",
+    "type": "text"
+  },
+  {
+    "key": "services_021",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: THE LOGIC BEHIND THE METRIC",
+    "type": "text"
+  },
+  {
+    "key": "services_022",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: revenue =",
+    "type": "text"
+  },
+  {
+    "key": "services_023",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: SUM",
+    "type": "text"
+  },
+  {
+    "key": "services_024",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: (amount)",
+    "type": "text"
+  },
+  {
+    "key": "services_025",
+    "group": "services",
+    "section": "Page content",
+    "label": "Paragraph: Grouped by customer.",
+    "type": "text"
+  },
+  {
+    "key": "services_026",
+    "group": "services",
+    "section": "Page content",
+    "label": "Paragraph: Traced to the source.",
+    "type": "text"
+  },
+  {
+    "key": "services_027",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: 03 / DISCOVER",
+    "type": "text"
+  },
+  {
+    "key": "services_028",
+    "group": "services",
+    "section": "Page content",
+    "label": "Section heading: Visual data discovery",
+    "type": "text"
+  },
+  {
+    "key": "services_029",
+    "group": "services",
+    "section": "Page content",
+    "label": "Paragraph: Put the pipeline in perspective with an interactive lineage graph. Move between an ov",
+    "type": "textarea"
+  },
+  {
+    "key": "services_030",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Visual navigation through data relationships",
+    "type": "text"
+  },
+  {
+    "key": "services_031",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: SQL project import from folders and GitHub",
+    "type": "text"
+  },
+  {
+    "key": "services_032",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Database exploration for DuckDB, Snowflake, and Databricks",
+    "type": "text"
+  },
+  {
+    "key": "services_033",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Engineers",
+    "type": "text"
+  },
+  {
+    "key": "services_034",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Shared context",
+    "type": "text"
+  },
+  {
+    "key": "services_035",
+    "group": "services",
+    "section": "Page content",
+    "label": "Text: Analysts",
+    "type": "text"
+  },
+  {
+    "key": "services_036",
+    "group": "services",
+    "section": "Closing message",
+    "label": "Text: LET’S FIND THE RIGHT FIT",
+    "type": "text"
+  },
+  {
+    "key": "services_037",
+    "group": "services",
+    "section": "Closing message",
+    "label": "Section heading: Your pipeline has its own story.",
+    "type": "text"
+  },
+  {
+    "key": "services_038",
+    "group": "services",
+    "section": "Closing message",
+    "label": "Paragraph: Provenix is actively evolving. Get in touch to discuss your SQL environment, ask abou",
+    "type": "textarea"
+  },
+  {
+    "key": "services_039",
+    "group": "services",
+    "section": "Closing message",
+    "label": "Link label: Talk to us →",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_001",
+    "group": "home",
+    "section": "Page title and accessibility",
+    "label": "Browser title: Provenix — Clarity behind every column",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_002",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: SQL LINEAGE. HUMAN CLARITY.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_003",
+    "group": "home",
+    "section": "Hero",
+    "label": "Main heading: Your data has",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_004",
+    "group": "home",
+    "section": "Hero",
+    "label": "Main heading: a story.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_005",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: See the whole picture.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_006",
+    "group": "home",
+    "section": "Hero",
+    "label": "Paragraph: Connect the dots between your SQL, your transformations, and your metrics. Provenix h",
+    "type": "textarea"
+  },
+  {
+    "key": "sommaire_007",
+    "group": "home",
+    "section": "Hero",
+    "label": "Link label: Explore what we do",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_008",
+    "group": "home",
+    "section": "Hero",
+    "label": "Link label: Meet Provenix",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_009",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: Built for the people behind the data.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_010",
+    "group": "home",
+    "section": "Hero",
+    "label": "Aria label: Illustrative lineage: orders and customers feed customer revenue, which feeds revenue",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_011",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: THE PATH TO UNDERSTANDING",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_012",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: Every metric. A traceable beginning.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_013",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: SOURCE TABLE",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_014",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: orders",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_015",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: customer_id",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_016",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: int",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_017",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: amount",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_018",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: decimal",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_019",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: SOURCE TABLE",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_020",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: customers",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_021",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: customer_id",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_022",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: int",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_023",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: region",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_024",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: text",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_025",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: TRANSFORMATION",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_026",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: customer_revenue",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_027",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: customer_id",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_028",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: Σ revenue",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_029",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: SUM(orders.amount)",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_030",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: BUSINESS VIEW",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_031",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: Revenue by region",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_032",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: From source to meaning",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_033",
+    "group": "home",
+    "section": "Hero",
+    "label": "Text: ILLUSTRATIVE LINEAGE",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_034",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Text: Built around your",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_035",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Text: SQL ecosystem",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_036",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Text: Snowflake",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_037",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Text: Databricks",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_038",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Text: DuckDB",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_039",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Paragraph: One connected view.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_040",
+    "group": "home",
+    "section": "SQL platforms",
+    "label": "Paragraph: Across your SQL projects.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_041",
+    "group": "home",
+    "section": "Page content",
+    "label": "Text: LESS GUESSWORK. MORE UNDERSTANDING.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_042",
+    "group": "home",
+    "section": "Page content",
+    "label": "Section heading: Go beyond where.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_043",
+    "group": "home",
+    "section": "Page content",
+    "label": "Section heading: Understand",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_044",
+    "group": "home",
+    "section": "Page content",
+    "label": "Text: how.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_045",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: A table name tells only part of the story. We make the calculations, relationships, a",
+    "type": "textarea"
+  },
+  {
+    "key": "sommaire_046",
+    "group": "home",
+    "section": "Page content",
+    "label": "Heading: Follow every connection",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_047",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: Trace table and column dependencies across SQL files, from original sources to downst",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_048",
+    "group": "home",
+    "section": "Page content",
+    "label": "Link label: Explore data lineage",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_049",
+    "group": "home",
+    "section": "Page content",
+    "label": "Heading: Unpack the logic",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_050",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: See the formulas, joins, filters, and aggregations that shape your data. Make complex",
+    "type": "textarea"
+  },
+  {
+    "key": "sommaire_051",
+    "group": "home",
+    "section": "Page content",
+    "label": "Link label: Explore SQL analysis",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_052",
+    "group": "home",
+    "section": "Page content",
+    "label": "Heading: Build shared understanding",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_053",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: Bring engineers and analysts into the same conversation with an interactive view of h",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_054",
+    "group": "home",
+    "section": "Page content",
+    "label": "Link label: Explore visual discovery",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_055",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Text: THE QUESTION BEHIND THE NUMBER",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_056",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Paragraph: “Where does this",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_057",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Paragraph: metric",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_058",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Text: actually",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_059",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Paragraph: come from?”",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_060",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Text: A familiar question. A clearer way to answer it.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_061",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Text: MADE FOR REAL DATA WORK",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_062",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Section heading: Less time untangling.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_063",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Section heading: More time moving forward.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_064",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Paragraph: Understanding a pipeline shouldn’t depend on finding the one person who remembers how",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_065",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Paragraph: Provenix brings the logic buried in SQL into view, helping teams investigate unfamili",
+    "type": "textarea"
+  },
+  {
+    "key": "sommaire_066",
+    "group": "home",
+    "section": "Our approach",
+    "label": "Link label: The thinking behind Provenix",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_067",
+    "group": "home",
+    "section": "Page content",
+    "label": "Text: FROM CODE TO CONTEXT",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_068",
+    "group": "home",
+    "section": "Page content",
+    "label": "Section heading: A clearer path through your data.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_069",
+    "group": "home",
+    "section": "Page content",
+    "label": "Link label: Discover our approach ↗",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_070",
+    "group": "home",
+    "section": "Page content",
+    "label": "Text: 01 / CONNECT",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_071",
+    "group": "home",
+    "section": "Page content",
+    "label": "Heading: Start with your SQL",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_072",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: Bring a SQL project from a folder or GitHub, or explore a supported database connecti",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_073",
+    "group": "home",
+    "section": "Page content",
+    "label": "Text: 02 / UNDERSTAND",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_074",
+    "group": "home",
+    "section": "Page content",
+    "label": "Heading: Reveal the relationships",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_075",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: Analyze dependencies and the transformations connecting your sources and outputs.",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_076",
+    "group": "home",
+    "section": "Page content",
+    "label": "Text: 03 / EXPLORE",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_077",
+    "group": "home",
+    "section": "Page content",
+    "label": "Heading: See the bigger picture",
+    "type": "text"
+  },
+  {
+    "key": "sommaire_078",
+    "group": "home",
+    "section": "Page content",
+    "label": "Paragraph: Follow the lineage, inspect formulas, and build a shared understanding of your pipeli",
+    "type": "text"
+  },
+  {
+    "key": "menu_open",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Open-menu accessible label",
+    "type": "text"
+  },
+  {
+    "key": "menu_close",
+    "group": "shared",
+    "section": "Navigation",
+    "label": "Close-menu accessible label",
+    "type": "text"
+  },
+  {
+    "key": "email_subject",
+    "group": "contact",
+    "section": "Form behavior",
+    "label": "Email subject prefix",
+    "type": "text"
+  },
+  {
+    "key": "email_name",
+    "group": "contact",
+    "section": "Form behavior",
+    "label": "Email name label",
+    "type": "text"
+  },
+  {
+    "key": "email_address",
+    "group": "contact",
+    "section": "Form behavior",
+    "label": "Email address label",
+    "type": "text"
+  },
+  {
+    "key": "email_company",
+    "group": "contact",
+    "section": "Form behavior",
+    "label": "Email company label",
+    "type": "text"
+  },
+  {
+    "key": "email_empty_company",
+    "group": "contact",
+    "section": "Form behavior",
+    "label": "Empty company text",
+    "type": "text"
+  },
+  {
+    "key": "email_status",
+    "group": "contact",
+    "section": "Form behavior",
+    "label": "Contact form status message ({email} uses your public email)",
+    "type": "textarea"
+  }
+]

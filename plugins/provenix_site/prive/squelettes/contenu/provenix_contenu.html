@@ -1,0 +1,11 @@
+[(#AUTORISER{configurer}|sinon_interdire_acces)]
+<h1>Provenix website content</h1>
+<p>Edit the website text here. The existing layout, colors, and line breaks are maintained by the theme. Fields are plain text; no HTML is needed.</p>
+<p><strong>Shared content</strong> contains navigation, footer, search description, contact email, and the shared contact banner. Saving publishes changes immediately.</p>
+<div class="onglets_simple clearfix"><ul>
+<BOUCLE_tabs(DATA){source tableau,#VAL{''}|provenix_groupes}>
+<li><a href="[(#URL_ECRIRE{provenix_contenu}|parametre_url{groupe,#CLE})]" [class="(#ENV{groupe,home}|=={#CLE}|oui)on"]>[(#VALEUR|entites_html)]</a></li>
+</BOUCLE_tabs>
+</ul></div>
+#FORMULAIRE_EDITER_PROVENIX{#ENV{groupe,home}}
+<p><a href="#URL_SITE_SPIP" target="_blank" rel="noopener">View website ↗</a></p>
