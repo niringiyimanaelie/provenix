@@ -21,6 +21,7 @@ function provenix_site_affiche_milieu($flux)
     $article_ids = lire_config('provenix_articles', []);
     $section_ids = lire_config('provenix_sections', []);
     $items = [];
+    $location = "";
     foreach (provenix_article_plan()['articles'] as $article) {
         $article_id = (int) ($article_ids[$article['role']] ?? 0);
         $matches = $object === 'article'
@@ -29,22 +30,27 @@ function provenix_site_affiche_milieu($flux)
         if (!$matches || !$article_id || !autoriser('voir', 'article', $article_id)) {
             continue;
         }
+        $location = $article['section'] === 'service_catalogue'
+            ? 'Home and Services'
+            : provenix_article_plan()['sections'][$article['section']];
         $label = htmlspecialchars($article['label'], ENT_QUOTES, 'UTF-8');
         $url = htmlspecialchars(
             generer_url_ecrire('article', 'id_article=' . $article_id),
             ENT_QUOTES,
             'UTF-8'
         );
-        $items[] = '<li><a href="' . $url . '"><strong>' . $label
-            . '</strong></a> <small>(article ' . $article_id . ')</small></li>';
+        $items[] = '<li style="margin:8px 0"><a href="' . $url . '"><strong>' . $label
+            . '</strong></a></li>';
     }
     if ($items) {
-        $heading = $object === 'article' ? 'Where this article appears' : 'Website content: where to edit';
+        $heading = $object === 'article' ? 'Website placement' : 'Edit page content';
         $guide = '<div class="provenix-editor-guide" style="margin:20px 0;padding:16px;background:#f5f0ff;border-left:4px solid #7650cf">'
             . '<h2>' . $heading . '</h2>'
-            . '<p>Internal editing guide: these labels are not displayed on the public website. '
-            . 'The article title remains the public heading.</p><ul>' . implode('', $items) . '</ul>'
-            . '<p>To change the content, open the article and choose <strong>Edit this article</strong>.</p></div>';
+            . ($object === 'article'
+                ? '<p><strong>Appears on:</strong> ' . htmlspecialchars($location, ENT_QUOTES, 'UTF-8') . '</p>'
+                : '<p>Choose the part of this page you want to edit.</p>')
+            . '<ul>' . implode('', $items) . '</ul>'
+            . '<p><small>These labels are only visible in the administration area.</small></p></div>';
         $marker = '<!--affiche_milieu-->';
         $flux['data'] = strpos($flux['data'], $marker) !== false
             ? str_replace($marker, $guide . $marker, $flux['data'])

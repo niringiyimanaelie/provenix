@@ -110,11 +110,13 @@ folders merely to make the file explorer shorter can break the site.
 
 ## Internal article labels
 
-The Website content directory and each mapped section show descriptive labels
-such as "Home - Main introduction at the top of the page". Open an article to
-see its "Where this article appears" guide. These labels are private editing
-guidance, separate from the public article title; changing a public title does
-not change its assigned position. Labels are defined in the plugin's
-`article-plan.json` and do not require an additional article database field.
-The guide covers the 22 mapped articles; newly added service articles still
-appear in SPIP's normal article list.
+The Website content directory and each mapped section use short labels such
+as "Main introduction", "Our approach", and "Step 1: Connect your SQL".
+Section lists do not repeat the page name. Individual article viewing and
+editing screens show "Appears on: Home", "Appears on: About Us", or the
+appropriate page separately. Shared service articles say "Home and Services".
+
+These labels are private editing guidance, separate from the public article
+title. Labels are defined in the plugin's `article-plan.json`; they do not
+require an additional database field. The guide covers the 22 mapped articles.
+New service articles still appear in SPIP's normal article list.
