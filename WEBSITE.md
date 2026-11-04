@@ -53,6 +53,8 @@ The original one-time template conversion scripts have been retired after the CM
 
 ## Verification
 
+- `php tools/test_article_guides.php`: read-only check that all mapped article links in the private section guides resolve to valid article IDs after HTML decoding.
+
 - `php tools/test_cms.php anonymous`: verifies anonymous access is rejected.
 - `php tools/test_cms.php`: renders each settings tab, checks signed forms and validation, then makes and restores one temporary navigation-label edit. Run only on a local development site.
 - `php tools/test_articles.php`: checks native articles, idempotency, a reversible article edit, draft visibility on both pages, republishing, and revision records. Run only locally; temporary test edits are restored, and revision history records those test changes.

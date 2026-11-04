@@ -34,10 +34,12 @@ function provenix_site_affiche_milieu($flux)
             ? 'Home and Services'
             : provenix_article_plan()['sections'][$article['section']];
         $label = htmlspecialchars($article['label'], ENT_QUOTES, 'UTF-8');
+        // SPIP already escapes ampersands; do not encode those entities twice.
         $url = htmlspecialchars(
             generer_url_ecrire('article', 'id_article=' . $article_id),
             ENT_QUOTES,
-            'UTF-8'
+            'UTF-8',
+            false
         );
         $items[] = '<li style="margin:8px 0"><a href="' . $url . '"><strong>' . $label
             . '</strong></a></li>';
