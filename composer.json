@@ -1,0 +1,57 @@
+{
+    "name": "spip/spip",
+    "description": "Système de Publication pour l’Internet",
+    "license": "GPL-3.0-only",
+    "type": "project",
+    "keywords": [
+        "cms",
+        "spip"
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "spip-league/composer-installer": "^0.8",
+        "spip-league/kernel": "^1.0",
+        "spip/dist": "^4.2.5",
+        "spip/ecrire": "^4.4",
+        "spip/prive": "^1.0",
+        "spip/security": "^1.6",
+        "symfony/polyfill-php80": "^1.31",
+        "symfony/polyfill-php81": "^1.31",
+        "symfony/polyfill-php82": "^1.31",
+        "symfony/polyfill-php83": "^1.31",
+        "symfony/polyfill-php84": "^1.31",
+        "symfony/polyfill-php85": "^1.31"
+    },
+    "repositories": {
+        "spip": {
+            "type": "composer",
+            "url": "https://get.spip.net/composer"
+        }
+    },
+    "minimum-stability": "beta",
+    "archive": {
+        "name": "spip",
+        "exclude": [
+            "!/ecrire",
+            "!/plugins-dist",
+            "!/prive",
+            "!/squelettes-dist",
+            "!/vendor"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "spip-league/composer-installer": true
+        },
+        "platform": {
+            "php": "7.4.33"
+        }
+    },
+    "extra": {
+        "spip": {
+            "back_office": "spip/ecrire",
+            "private_template": "spip/prive",
+            "template": "spip/dist"
+        }
+    }
+}

@@ -1,0 +1,4 @@
+# Prevent local development credentials from being served over HTTP.
+<FilesMatch "^\.env(?:\..*)?$">
+    Require all denied
+</FilesMatch>

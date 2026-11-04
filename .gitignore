@@ -1,0 +1,26 @@
+#composer & outils
+# Local development secrets
+/.env
+/.env.*
+!/.env.example
+
+/vendor/
+/composer.phar
+/composer.local.*
+/phpunit.xml
+/.phpunit.cache
+/docker-compose.override.yml
+/docker-compose.yml
+/*.zip
+
+# SPIP
+/tmp/
+/local/
+/IMG/
+/config/.ok
+/config/spip/
+/config/*.php
+/plugins-dist/
+/squelettes-dist/
+/prive/
+/ecrire/
