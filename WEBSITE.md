@@ -49,7 +49,7 @@ The local `plugins/provenix_site/` plugin supplies the content directory, settin
 
 For another SPIP installation, copy the theme and plugin, then enable **Provenix website content** under plugin management. Alternatively, run `C:\xampp\php\php.exe tools\install_cms.php` from the project root. This installer is CLI-only and preserves the other active plugins.
 
-`tools/extract_cms_content.py` is the one-time migration from the original static templates; it refuses to rerun on migrated templates. Do not run it for normal content editing. All `tools/` HTTP access is denied.
+The original one-time template conversion scripts have been retired after the CMS migration. They remain recoverable in Git history. The plugin retains the migrations needed to install or upgrade the site. All `tools/` HTTP access is denied.
 
 ## Verification
 
@@ -82,3 +82,28 @@ Keep adjacent inline elements together when whitespace affects the displayed
 text, such as the dot after the brand name. Keep SPIP expressions intact when
 formatting templates. The formatting of source files is separate from the
 content edited in `/ecrire/` and does not change database records.
+
+## What belongs in the project
+
+| Folder or files | Purpose |
+| --- | --- |
+| `squelettes/` | Custom website templates, styles, JavaScript, and icons |
+| `plugins/provenix_site/` | CMS integration, settings forms, article mappings, and installation data |
+| `tools/` | Local installer and verification scripts |
+| `ecrire/`, `prive/`, `plugins-dist/`, `squelettes-dist/`, `vendor/` | SPIP and its dependencies; maintain through SPIP's upgrade process |
+| `config/`, `.env` | Local configuration and credentials; keep private |
+| `IMG/` | Uploaded media; include in site backups |
+| `tmp/`, `local/` | SPIP working files and generated assets; let SPIP manage them |
+| `.git/` | Version history and recovery |
+| `.vscode/`, `.editorconfig` | Editor readability and formatting conventions |
+| Root PHP, Composer, license, security, and SPIP metadata files | CMS entry points, dependency records, and maintenance information |
+
+Remove temporary development dependencies once their job is complete. Retire
+one-time conversion scripts after migration, keeping their history in Git.
+Keep installation seeds and article mappings: the plugin still needs these,
+even though normal public content comes from the database. Keep the local HTML
+comparison snapshots in `tmp/` while using `tools/verify_cms.py`.
+
+A clean Git repository excludes generated files and secrets; the working site
+still needs its installed dependencies and runtime folders. Deleting those
+folders merely to make the file explorer shorter can break the site.
