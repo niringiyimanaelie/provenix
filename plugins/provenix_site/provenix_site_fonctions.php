@@ -2,10 +2,15 @@
 if (!defined('_ECRIRE_INC_VERSION')) {
     return;
 }
+include_spip('inc/provenix_articles');
 
 /** Content is stored in SPIP, never read from the installation seed at runtime. */
 function provenix_valeur($key) {
     include_spip('inc/config');
+    $bindings = provenix_article_bindings();
+    if (isset($bindings[$key])) {
+        return provenix_article_value($bindings[$key]);
+    }
     return (string) lire_config('provenix_contenu/' . $key, '');
 }
 
@@ -23,8 +28,9 @@ function provenix_schema($group = null) {
     if ($schema === null) {
         $schema = json_decode(file_get_contents(__DIR__ . '/content-schema.json'), true, 512, JSON_THROW_ON_ERROR);
     }
-    return $group === null ? $schema : array_values(array_filter($schema, static function ($field) use ($group) {
-        return $field['group'] === $group;
+    $bindings = provenix_article_bindings();
+    return array_values(array_filter($schema, static function ($field) use ($group, $bindings) {
+        return !isset($bindings[$field['key']]) && ($group === null || $field['group'] === $group);
     }));
 }
 

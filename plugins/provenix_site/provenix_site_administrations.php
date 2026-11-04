@@ -5,7 +5,11 @@ if (!defined('_ECRIRE_INC_VERSION')) {
 
 function provenix_site_upgrade($nom_meta_base_version, $version_cible) {
     include_spip('base/upgrade');
-    maj_plugin($nom_meta_base_version, $version_cible, ['create' => [['provenix_site_initialiser']]]);
+    include_spip('inc/provenix_articles');
+    maj_plugin($nom_meta_base_version, $version_cible, [
+        'create' => [['provenix_site_initialiser'], ['provenix_migrate_articles']],
+        '1.1.0' => [['provenix_migrate_articles']],
+    ]);
 }
 
 function provenix_site_initialiser() {

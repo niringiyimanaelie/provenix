@@ -30,5 +30,8 @@ if (is_array($activation_errors)) {
     }
 }
 require_once 'plugins/provenix_site/provenix_site_administrations.php';
-provenix_site_upgrade('provenix_site_base_version', '1.0.0');
+$GLOBALS['visiteur_session'] = sql_fetsel('id_auteur,statut,webmestre,lang', 'spip_auteurs', "statut='0minirezo' AND webmestre='oui'") ?: [];
+if (!$GLOBALS['visiteur_session']) { throw new RuntimeException('An existing SPIP webmaster is required.'); }
+$GLOBALS['visiteur_session']['restreint'] = '';
+provenix_site_upgrade('provenix_site_base_version', '1.1.0');
 echo "Website content plugin installed.\n";

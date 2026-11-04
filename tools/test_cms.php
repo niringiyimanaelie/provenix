@@ -52,26 +52,26 @@ verify(isset(formulaires_editer_provenix_verifier_dist('shared')['inc_header_001
 // Check encoding without saving the payload to the database.
 $memory = $GLOBALS['meta']['provenix_contenu'];
 $values = unserialize($memory);
-$values['sommaire_003'] = '<script>alert("test")</script>';
+$values['inc_header_008'] = '<script>alert("test")</script>';
 $GLOBALS['meta']['provenix_contenu'] = serialize($values);
-verify(strpos(provenix_texte('sommaire_003'), '<script>') === false, 'CMS content is HTML-escaped');
+verify(strpos(provenix_texte('inc_header_008'), '<script>') === false, 'CMS content is HTML-escaped');
 $GLOBALS['meta']['provenix_contenu'] = $memory;
 
-$original = provenix_valeur('sommaire_003');
-foreach (provenix_schema('home') as $field) { set_request($field['key'], provenix_valeur($field['key'])); }
+$original = provenix_valeur('inc_header_008');
+foreach (provenix_schema('shared') as $field) { set_request($field['key'], provenix_valeur($field['key'])); }
 file_get_contents('http://localhost:8080/provenix/');
 sleep(1);
 try {
-    set_request('sommaire_003', 'CMS save verification');
-    verify(empty(formulaires_editer_provenix_verifier_dist('home')), 'Home form validates');
-    $saved = formulaires_editer_provenix_traiter_dist('home');
+    set_request('inc_header_008', 'CMS save verification');
+    verify(empty(formulaires_editer_provenix_verifier_dist('shared')), 'Shared settings form validates');
+    $saved = formulaires_editer_provenix_traiter_dist('shared');
     verify(isset($saved['message_ok']), 'CMS save succeeds');
     $live = file_get_contents('http://localhost:8080/provenix/');
     verify(strpos($live, 'CMS save verification') !== false, 'Saved CMS change reaches the public page without cache clearing');
 } finally {
     sleep(1);
-    set_request('sommaire_003', $original);
-    formulaires_editer_provenix_traiter_dist('home');
+    set_request('inc_header_008', $original);
+    formulaires_editer_provenix_traiter_dist('shared');
     // ecrire_meta only touches metadata cache once per request. Our test's
     // intervening HTTP request rebuilt that cache, so invalidate it again.
     touch_meta(time() - (_META_CACHE_TIME << 1));

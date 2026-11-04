@@ -1,0 +1,707 @@
+{
+  "sections": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "service_catalogue": "Our services"
+  },
+  "articles": [
+    {
+      "role": "home_intro",
+      "section": "home",
+      "label": "Homepage introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_002"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_003"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "sommaire_004"
+          ],
+          "separator": "\n"
+        },
+        "descriptif": {
+          "keys": [
+            "sommaire_005"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "sommaire_006"
+          ],
+          "separator": "\n"
+        },
+        "ps": {
+          "keys": [
+            "sommaire_009"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "home_capabilities",
+      "section": "home",
+      "label": "Capabilities introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_041"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_042"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "sommaire_043"
+          ],
+          "separator": "\n"
+        },
+        "descriptif": {
+          "keys": [
+            "sommaire_044"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "sommaire_045"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "home_story",
+      "section": "home",
+      "label": "Our approach",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_061"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_062"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "sommaire_063"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "sommaire_064",
+            "sommaire_065"
+          ],
+          "separator": "\n\n"
+        },
+        "nom_site": {
+          "keys": [
+            "sommaire_066"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "home_process",
+      "section": "home",
+      "label": "Process introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_067"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_068"
+          ],
+          "separator": "\n"
+        },
+        "nom_site": {
+          "keys": [
+            "sommaire_069"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "home_connect",
+      "section": "home",
+      "label": "Process: connect",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_070"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_071"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "sommaire_072"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "home_understand",
+      "section": "home",
+      "label": "Process: understand",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_073"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_074"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "sommaire_075"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "home_explore",
+      "section": "home",
+      "label": "Process: explore",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "sommaire_076"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "sommaire_077"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "sommaire_078"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "about_intro",
+      "section": "about",
+      "label": "About us introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "about_002"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "about_003"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "about_004"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "about_005"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "about_mission",
+      "section": "about",
+      "label": "Why we are building",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "about_006"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "about_007"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "about_008"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "about_009",
+            "about_010",
+            "about_011"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "about_values",
+      "section": "about",
+      "label": "Values introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "about_012"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "about_013"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "about_evidence",
+      "section": "about",
+      "label": "Value: evidence",
+      "fields": {
+        "titre": {
+          "keys": [
+            "about_014"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "about_015"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "about_readability",
+      "section": "about",
+      "label": "Value: readability",
+      "fields": {
+        "titre": {
+          "keys": [
+            "about_016"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "about_017"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "about_questions",
+      "section": "about",
+      "label": "Value: questions",
+      "fields": {
+        "titre": {
+          "keys": [
+            "about_018"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "about_019"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "about_today",
+      "section": "about",
+      "label": "Where we are today",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "about_020"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "about_021"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "about_022"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "about_023",
+            "about_024"
+          ],
+          "separator": "\n\n"
+        },
+        "nom_site": {
+          "keys": [
+            "about_025"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "services_intro",
+      "section": "services",
+      "label": "Services introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "services_002"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "services_003"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "services_004"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "services_005"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "lineage",
+      "section": "service_catalogue",
+      "label": "Service: lineage",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "services_006"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "services_007"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "services_008"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "services_009",
+            "services_010",
+            "services_011"
+          ],
+          "separator": "\n\n",
+          "list": true
+        },
+        "soustitre": {
+          "keys": [
+            "sommaire_046"
+          ],
+          "separator": "\n"
+        },
+        "descriptif": {
+          "keys": [
+            "sommaire_047"
+          ],
+          "separator": "\n"
+        },
+        "nom_site": {
+          "keys": [
+            "sommaire_048"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "analysis",
+      "section": "service_catalogue",
+      "label": "Service: analysis",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "services_015"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "services_016"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "services_017"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "services_018",
+            "services_019",
+            "services_020"
+          ],
+          "separator": "\n\n",
+          "list": true
+        },
+        "soustitre": {
+          "keys": [
+            "sommaire_049"
+          ],
+          "separator": "\n"
+        },
+        "descriptif": {
+          "keys": [
+            "sommaire_050"
+          ],
+          "separator": "\n"
+        },
+        "nom_site": {
+          "keys": [
+            "sommaire_051"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "exploration",
+      "section": "service_catalogue",
+      "label": "Service: exploration",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "services_027"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "services_028"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "services_029"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "services_030",
+            "services_031",
+            "services_032"
+          ],
+          "separator": "\n\n",
+          "list": true
+        },
+        "soustitre": {
+          "keys": [
+            "sommaire_052"
+          ],
+          "separator": "\n"
+        },
+        "descriptif": {
+          "keys": [
+            "sommaire_053"
+          ],
+          "separator": "\n"
+        },
+        "nom_site": {
+          "keys": [
+            "sommaire_054"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "services_closing",
+      "section": "services",
+      "label": "Services closing message",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "services_036"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "services_037"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "services_038"
+          ],
+          "separator": "\n\n"
+        },
+        "nom_site": {
+          "keys": [
+            "services_039"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "contact_intro",
+      "section": "contact",
+      "label": "Contact introduction",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "contact_002"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "contact_003"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "contact_004"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "contact_005"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "contact_details",
+      "section": "contact",
+      "label": "Contact information",
+      "fields": {
+        "surtitre": {
+          "keys": [
+            "contact_006"
+          ],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": [
+            "contact_007"
+          ],
+          "separator": "\n"
+        },
+        "soustitre": {
+          "keys": [
+            "contact_008"
+          ],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": [
+            "contact_010",
+            "contact_011"
+          ],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "contact_question",
+      "section": "contact",
+      "label": "Conversation starter",
+      "fields": {
+        "titre": {
+          "keys": [
+            "contact_012"
+          ],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": [
+            "contact_013"
+          ],
+          "separator": "\n\n"
+        }
+      }
+    }
+  ]
+}

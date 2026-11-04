@@ -1,4 +1,4 @@
-<paquet prefix="provenix_site" categorie="edition" version="1.0.0" etat="stable" compatibilite="[4.4.0;4.4.*]" schema="1.0.0" logo="images/provenix.svg">
+<paquet prefix="provenix_site" categorie="edition" version="1.1.0" etat="stable" compatibilite="[4.4.0;4.4.*]" schema="1.1.0" logo="images/provenix.svg">
   <nom>Provenix website content</nom>
   <auteur>Provenix</auteur>
   <licence>GPL</licence>
