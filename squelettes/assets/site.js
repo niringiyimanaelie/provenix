@@ -26,3 +26,19 @@ document.querySelector("#contact-form")?.addEventListener("submit", (event) => {
   status.hidden = false;
   status.textContent = settings.emailStatus.replaceAll("{email}", settings.contactEmail);
 });
+
+// The example stays readable without JavaScript; enhance it with metric tracing.
+document.querySelectorAll("[data-lineage-demo]").forEach((demo) => {
+  const button = demo.querySelector(".lineage-trace-button");
+  const fallback = demo.querySelector(".lineage-report-fallback");
+  const hint = demo.querySelector(".lineage-hint");
+  if (!button) return;
+  button.hidden = false;
+  if (fallback) fallback.hidden = true;
+  if (hint) hint.hidden = false;
+  button.addEventListener("click", () => {
+    const tracing = button.getAttribute("aria-pressed") !== "true";
+    button.setAttribute("aria-pressed", String(tracing));
+    demo.classList.toggle("is-tracing", tracing);
+  });
+});

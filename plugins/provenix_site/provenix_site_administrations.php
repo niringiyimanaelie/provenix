@@ -8,9 +8,19 @@ function provenix_site_upgrade($nom_meta_base_version, $version_cible)
     include_spip("base/upgrade");
     include_spip("inc/provenix_articles");
     maj_plugin($nom_meta_base_version, $version_cible, [
-        "create" => [["provenix_site_initialiser"], ["provenix_migrate_articles"], ["provenix_install_platform_logos"]],
+        "create" => [
+            ["provenix_site_initialiser"],
+            ["provenix_migrate_articles"],
+            ["provenix_install_platform_logos"],
+            ["provenix_install_lineage_demo"],
+        ],
         "1.1.0" => [["provenix_migrate_articles"]],
-        "1.2.0" => [["provenix_prepare_platforms"], ["provenix_migrate_articles"], ["provenix_install_platform_logos"]],
+        "1.2.0" => [
+            ["provenix_prepare_platforms"],
+            ["provenix_migrate_articles"],
+            ["provenix_install_platform_logos"],
+        ],
+        "1.3.0" => [["provenix_install_lineage_demo"]],
     ]);
 }
 
@@ -90,6 +100,33 @@ function provenix_install_platform_logos()
         $installed[$role] = true;
         ecrire_config("provenix_platform_logos_installed", $installed);
     }
+    include_spip("inc/invalideur");
+    suivre_invalideur("1");
+}
+
+/** Install the editable illustrative example without changing article content. */
+function provenix_install_lineage_demo()
+{
+    include_spip("inc/config");
+    $content = lire_config("provenix_contenu", []);
+    $old_keys = [];
+    for ($number = 10; $number <= 33; $number++) {
+        $key = sprintf("sommaire_%03d", $number);
+        if (isset($content[$key])) {
+            $old_keys[$key] = $content[$key];
+            unset($content[$key]);
+        }
+    }
+    if (lire_config("provenix_lineage_before", null) === null) {
+        ecrire_config("provenix_lineage_before", $old_keys);
+    }
+    $seed = json_decode(file_get_contents(__DIR__ . "/initial-content.json"), true);
+    foreach ($seed as $key => $value) {
+        if (strpos($key, "lineage_") === 0 && !array_key_exists($key, $content)) {
+            $content[$key] = $value;
+        }
+    }
+    ecrire_config("provenix_contenu", $content);
     include_spip("inc/invalideur");
     suivre_invalideur("1");
 }

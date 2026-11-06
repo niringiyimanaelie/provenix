@@ -28,42 +28,64 @@
               <span class="mini-line"></span> [(#VAL{sommaire_009}|provenix_texte)]
             </div>
           </div>
-          <div class="lineage-visual" aria-label="[(#VAL{sommaire_010}|provenix_texte)]">
+          <div class="lineage-visual" data-lineage-demo aria-label="[(#VAL{lineage_accessibility}|provenix_texte)]">
             <div class="visual-top">
-              <span><i></i> [(#VAL{sommaire_011}|provenix_texte)]</span><span>01 — 03</span>
+              <span><i aria-hidden="true"></i> [(#VAL{lineage_eyebrow}|provenix_texte)]</span>
+              <span aria-hidden="true">01 / 03</span>
             </div>
-            <div class="visual-label">
-              [(#VAL{sommaire_012}|provenix_texte)]
-            </div>
-            <div class="flow">
-              <div class="flow-source">
+            <h2 class="visual-label">[(#VAL{lineage_title}|provenix_texte)]</h2>
+            <div class="lineage-stages">
+              <div class="lineage-source-stage">
+                <div class="lineage-stage-label"><span>01</span> [(#VAL{lineage_sources}|provenix_texte)]</div>
                 <div class="data-node">
-                  <span class="node-type">[(#VAL{sommaire_013}|provenix_texte)]</span><strong><b>▤</b> [(#VAL{sommaire_014}|provenix_texte)]</strong><span>[(#VAL{sommaire_015}|provenix_texte)] <small>[(#VAL{sommaire_016}|provenix_texte)]</small></span><span class="selected-field">[(#VAL{sommaire_017}|provenix_texte)] <small>[(#VAL{sommaire_018}|provenix_texte)]</small></span>
+                  <strong><b aria-hidden="true">▤</b> [(#VAL{lineage_orders}|provenix_texte)]</strong>
+                  <span class="join-field">[(#VAL{lineage_order_id}|provenix_texte)]<small aria-hidden="true">⌁</small></span>
+                  <span data-lineage-field>[(#VAL{lineage_region_field}|provenix_texte)]</span>
+                  <span data-lineage-field>[(#VAL{lineage_sales_field}|provenix_texte)]</span>
                 </div>
                 <div class="data-node secondary">
-                  <span class="node-type">[(#VAL{sommaire_019}|provenix_texte)]</span><strong><b>▤</b> [(#VAL{sommaire_020}|provenix_texte)]</strong><span>[(#VAL{sommaire_021}|provenix_texte)] <small>[(#VAL{sommaire_022}|provenix_texte)]</small></span><span>[(#VAL{sommaire_023}|provenix_texte)] <small>[(#VAL{sommaire_024}|provenix_texte)]</small></span>
+                  <strong><b aria-hidden="true">▤</b> [(#VAL{lineage_refunds}|provenix_texte)]</strong>
+                  <span class="join-field">[(#VAL{lineage_order_id}|provenix_texte)]<small aria-hidden="true">⌁</small></span>
+                  <span data-lineage-field>[(#VAL{lineage_refund_field}|provenix_texte)]</span>
                 </div>
               </div>
-              <div class="flow-connector">
-                <span></span><span></span><b>→</b>
+              <div class="lineage-arrows" aria-hidden="true"><span></span><span></span><b>→</b></div>
+              <div class="lineage-transform-stage">
+                <div class="lineage-stage-label"><span>02</span> [(#VAL{lineage_transformations}|provenix_texte)]</div>
+                <div class="data-node transformed">
+                  <ol class="transformation-steps">
+                    <li>[(#VAL{lineage_step1}|provenix_texte)]</li>
+                    <li>[(#VAL{lineage_step2}|provenix_texte)]</li>
+                    <li>[(#VAL{lineage_step3}|provenix_texte)]</li>
+                  </ol>
+                  <code>[(#VAL{lineage_formula}|provenix_texte)]</code>
+                </div>
+                <p class="lineage-join-note">[(#VAL{lineage_join}|provenix_texte)]</p>
               </div>
-              <div class="data-node transformed">
-                <span class="node-type">[(#VAL{sommaire_025}|provenix_texte)]</span><strong>[(#VAL{sommaire_026}|provenix_texte)]</strong><span>[(#VAL{sommaire_027}|provenix_texte)]</span><span class="selected-field">[(#VAL{sommaire_028}|provenix_texte)]</span><code>[(#VAL{sommaire_029}|provenix_texte)]</code>
+            </div>
+            <div class="output-path" aria-hidden="true">↓</div>
+            <div class="lineage-report">
+              <div class="lineage-stage-label"><span>03</span> [(#VAL{lineage_destination}|provenix_texte)]</div>
+              <button class="lineage-trace-button" type="button" aria-pressed="false"
+                aria-describedby="lineage-demo-hint" aria-controls="lineage-demo-calculation" hidden>
+                <span>[(#VAL{lineage_report}|provenix_texte)]</span><span aria-hidden="true">↖</span>
+              </button>
+              <strong class="lineage-report-fallback">[(#VAL{lineage_report}|provenix_texte)]</strong>
+              <div class="lineage-report-table">
+                <table>
+                  <thead>
+                    <tr><th scope="col">[(#VAL{lineage_region_heading}|provenix_texte)]</th><th scope="col">[(#VAL{lineage_sales_heading}|provenix_texte)]</th><th scope="col">[(#VAL{lineage_refunds_heading}|provenix_texte)]</th><th scope="col">[(#VAL{lineage_net_heading}|provenix_texte)]</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><th scope="row">[(#VAL{lineage_region1}|provenix_texte)]</th><td>[(#VAL{lineage_sales1}|provenix_texte)]</td><td>[(#VAL{lineage_refunds1}|provenix_texte)]</td><td class="net-value">[(#VAL{lineage_net1}|provenix_texte)]</td></tr>
+                    <tr><th scope="row">[(#VAL{lineage_region2}|provenix_texte)]</th><td>[(#VAL{lineage_sales2}|provenix_texte)]</td><td>[(#VAL{lineage_refunds2}|provenix_texte)]</td><td class="net-value">[(#VAL{lineage_net2}|provenix_texte)]</td></tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="output-path">
-              ↓
-            </div>
-            <div class="output-node">
-              <span class="output-icon">↗</span>
-              <div>
-                <span class="node-type">[(#VAL{sommaire_030}|provenix_texte)]</span><strong>[(#VAL{sommaire_031}|provenix_texte)]</strong>
-              </div>
-              <span class="output-check">✓</span>
-            </div>
-            <div class="visual-bottom">
-              <span><i></i> [(#VAL{sommaire_032}|provenix_texte)]</span><span>[(#VAL{sommaire_033}|provenix_texte)]</span>
-            </div>
+            <p class="lineage-calculation" id="lineage-demo-calculation">[(#VAL{lineage_explanation}|provenix_texte)]</p>
+            <p class="lineage-hint" id="lineage-demo-hint" hidden>[(#VAL{lineage_hint}|provenix_texte)]</p>
+            <div class="visual-bottom"><span><i aria-hidden="true"></i> [(#VAL{lineage_disclaimer}|provenix_texte)]</span></div>
           </div>
         </div>
       </section>

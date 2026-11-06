@@ -142,3 +142,22 @@ Back up and transfer both the database and `IMG/` when deploying. The plugin's
 `media/` folder holds the initial official assets and source credits for a new
 installation. Reinstalling does not overwrite logos that editors have changed
 or deliberately removed after initial setup.
+
+## Homepage illustrative lineage example
+
+Under **Edit > Website content > Home**, find **Illustrative lineage demo**.
+Its headings, source/table names, transformation steps, report labels, example
+values, and instructions are editable CMS settings. The example uses orders
+and refunds to explain net revenue by region; its amounts are illustrative,
+not customer or company figures. If changing amounts, keep sales minus refunds
+equal to net revenue for each region.
+
+The three-stage layout is in `squelettes/sommaire.html`, with styling in
+`assets/site.css`. The report button toggles a visual trace through source
+fields and the transformation using `assets/site.js`; it works with keyboard
+activation and exposes its pressed state. Without JavaScript the full example
+and calculation remain readable. The row values are presentation content,
+not a live query or connection to the separate product application.
+
+The previous diagram settings were retained in the database under
+`provenix_lineage_before` during migration for recovery.

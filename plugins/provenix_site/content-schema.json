@@ -924,174 +924,6 @@
     "type": "text"
   },
   {
-    "key": "sommaire_010",
-    "group": "home",
-    "section": "Hero",
-    "label": "Aria label: Illustrative lineage: orders and customers feed customer revenue, which feeds revenue",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_011",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: THE PATH TO UNDERSTANDING",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_012",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: Every metric. A traceable beginning.",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_013",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: SOURCE TABLE",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_014",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: orders",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_015",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: customer_id",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_016",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: int",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_017",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: amount",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_018",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: decimal",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_019",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: SOURCE TABLE",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_020",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: customers",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_021",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: customer_id",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_022",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: int",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_023",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: region",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_024",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: text",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_025",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: TRANSFORMATION",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_026",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: customer_revenue",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_027",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: customer_id",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_028",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: Σ revenue",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_029",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: SUM(orders.amount)",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_030",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: BUSINESS VIEW",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_031",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: Revenue by region",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_032",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: From source to meaning",
-    "type": "text"
-  },
-  {
-    "key": "sommaire_033",
-    "group": "home",
-    "section": "Hero",
-    "label": "Text: ILLUSTRATIVE LINEAGE",
-    "type": "text"
-  },
-  {
     "key": "sommaire_034",
     "group": "home",
     "section": "SQL platforms",
@@ -1461,5 +1293,236 @@
     "section": "Form behavior",
     "label": "Contact form status message ({email} uses your public email)",
     "type": "textarea"
+  },
+  {
+    "key": "lineage_accessibility",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Accessibility description",
+    "type": "text"
+  },
+  {
+    "key": "lineage_eyebrow",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Small heading",
+    "type": "text"
+  },
+  {
+    "key": "lineage_title",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Main question",
+    "type": "text"
+  },
+  {
+    "key": "lineage_sources",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Stage 1 label",
+    "type": "text"
+  },
+  {
+    "key": "lineage_transformations",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Stage 2 label",
+    "type": "text"
+  },
+  {
+    "key": "lineage_destination",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Stage 3 label",
+    "type": "text"
+  },
+  {
+    "key": "lineage_orders",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Orders table name",
+    "type": "text"
+  },
+  {
+    "key": "lineage_order_id",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Order identifier field",
+    "type": "text"
+  },
+  {
+    "key": "lineage_region_field",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region field",
+    "type": "text"
+  },
+  {
+    "key": "lineage_sales_field",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Sales amount field",
+    "type": "text"
+  },
+  {
+    "key": "lineage_refunds",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Refunds table name",
+    "type": "text"
+  },
+  {
+    "key": "lineage_refund_field",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Refund amount field",
+    "type": "text"
+  },
+  {
+    "key": "lineage_step1",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Transformation step 1",
+    "type": "text"
+  },
+  {
+    "key": "lineage_step2",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Transformation step 2",
+    "type": "text"
+  },
+  {
+    "key": "lineage_step3",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Transformation step 3",
+    "type": "text"
+  },
+  {
+    "key": "lineage_formula",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Calculation summary",
+    "type": "text"
+  },
+  {
+    "key": "lineage_join",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Join explanation",
+    "type": "text"
+  },
+  {
+    "key": "lineage_report",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Report title and trace button",
+    "type": "text"
+  },
+  {
+    "key": "lineage_region_heading",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Report region column",
+    "type": "text"
+  },
+  {
+    "key": "lineage_sales_heading",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Report sales column",
+    "type": "text"
+  },
+  {
+    "key": "lineage_refunds_heading",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Report refunds column",
+    "type": "text"
+  },
+  {
+    "key": "lineage_net_heading",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Report net revenue column",
+    "type": "text"
+  },
+  {
+    "key": "lineage_region1",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Example region 1",
+    "type": "text"
+  },
+  {
+    "key": "lineage_sales1",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region 1 sales",
+    "type": "text"
+  },
+  {
+    "key": "lineage_refunds1",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region 1 refunds",
+    "type": "text"
+  },
+  {
+    "key": "lineage_net1",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region 1 net revenue",
+    "type": "text"
+  },
+  {
+    "key": "lineage_region2",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Example region 2",
+    "type": "text"
+  },
+  {
+    "key": "lineage_sales2",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region 2 sales",
+    "type": "text"
+  },
+  {
+    "key": "lineage_refunds2",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region 2 refunds",
+    "type": "text"
+  },
+  {
+    "key": "lineage_net2",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Region 2 net revenue",
+    "type": "text"
+  },
+  {
+    "key": "lineage_explanation",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Plain-language explanation",
+    "type": "text"
+  },
+  {
+    "key": "lineage_hint",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Interaction instruction",
+    "type": "text"
+  },
+  {
+    "key": "lineage_disclaimer",
+    "group": "home",
+    "section": "Illustrative lineage demo",
+    "label": "Example disclaimer",
+    "type": "text"
   }
 ]
