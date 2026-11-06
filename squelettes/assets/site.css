@@ -198,7 +198,15 @@ nav a[aria-current]:after {
   display: grid;
   grid-template-columns: 1.08fr 1fr;
   gap: 45px;
-  align-items: center;
+  align-items: start;
+}
+/* The over-title has its own row, so the heading and diagram start together. */
+.hero .hero-grid {
+  row-gap: 18px;
+}
+.hero .hero-grid > .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
 }
 .hero .eyebrow {
   display: flex;
@@ -1200,6 +1208,9 @@ textarea {
   }
   .hero h1 {
     font-size: clamp(42px, 8.5vw, 62px);
+  }
+  .hero .lineage-visual {
+    margin-top: 27px;
   }
   .hero-copy > p {
     font-size: 15px;
