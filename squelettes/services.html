@@ -22,7 +22,7 @@
       <section class="section">
         <div class="wrap service-list">
           <BOUCLE_services(ARTICLES){id_rubrique=#VAL{service_catalogue}|provenix_section}{par num titre,id_article}>
-            <article class="service-row" id="[(#ID_ARTICLE|provenix_service_role)]">
+            <article class="service-row service-role-[(#ID_ARTICLE|provenix_service_role)]" id="[(#ID_ARTICLE|provenix_service_role)]">
               <div class="service-index">
                 [(#ID_ARTICLE|provenix_champ{surtitre})]
               </div>

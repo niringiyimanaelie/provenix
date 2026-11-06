@@ -21,6 +21,7 @@ function provenix_site_upgrade($nom_meta_base_version, $version_cible)
             ["provenix_install_platform_logos"],
         ],
         "1.3.0" => [["provenix_install_lineage_demo"]],
+        "1.4.0" => [["provenix_prepare_ontology"], ["provenix_migrate_articles"]],
     ]);
 }
 
@@ -129,4 +130,18 @@ function provenix_install_lineage_demo()
     ecrire_config("provenix_contenu", $content);
     include_spip("inc/invalideur");
     suivre_invalideur("1");
+}
+
+/** Supply defaults only for the new ontology article before native migration. */
+function provenix_prepare_ontology()
+{
+    include_spip("inc/config");
+    $seed = json_decode(file_get_contents(__DIR__ . "/initial-content.json"), true);
+    $content = lire_config("provenix_contenu", []);
+    foreach ($seed as $key => $value) {
+        if (strpos($key, "ontology_") === 0 && !array_key_exists($key, $content)) {
+            $content[$key] = $value;
+        }
+    }
+    ecrire_config("provenix_contenu", $content);
 }

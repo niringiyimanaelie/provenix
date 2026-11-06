@@ -1,10 +1,10 @@
 <paquet
   prefix="provenix_site"
   categorie="edition"
-  version="1.3.0"
+  version="1.4.0"
   etat="stable"
   compatibilite="[4.4.0;4.4.*]"
-  schema="1.3.0"
+  schema="1.4.0"
   logo="images/provenix.svg">
   <nom>Provenix website content</nom>
   <auteur>Provenix</auteur>

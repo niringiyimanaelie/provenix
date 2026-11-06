@@ -282,7 +282,7 @@ function provenix_service_list($id)
 
 function provenix_service_icon($number)
 {
-    return [1 => "⌘", 2 => "ƒ", 3 => "◎"][(int) $number] ?? "◎";
+    return [1 => "⌘", 2 => "ƒ", 3 => "◎", 4 => "◇"][(int) $number] ?? "◎";
 }
 
 function provenix_service_number($number)

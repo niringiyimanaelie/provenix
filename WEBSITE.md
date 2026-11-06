@@ -120,7 +120,7 @@ appropriate page separately. Shared service articles say "Home and Services".
 
 These labels are private editing guidance, separate from the public article
 title. Labels are defined in the plugin's `article-plan.json`; they do not
-require an additional database field. The guide covers the 25 mapped articles, including three SQL platforms.
+require an additional database field. The guide covers the 26 mapped articles, including three SQL platforms and the ontology capability.
 New service articles still appear in SPIP's normal article list.
 
 ## SQL platform logos on the homepage
@@ -161,3 +161,17 @@ not a live query or connection to the separate product application.
 
 The previous diagram settings were retained in the database under
 `provenix_lineage_before` during migration for recovery.
+
+## Ontology website content
+
+**Services > Our services > Data ontology exploration** is a native published
+article. Its subtitle, description, and link label populate the fourth Home
+capability card; its title, introduction, and body populate the text-only
+Services section at `spip.php?page=services#ontology`. Find it through the
+Services tab of **Edit > Website content** as **Data ontology**.
+
+The copy describes implemented search, column types, extracted formulas,
+transformation categories, and upstream/downstream exploration. No ontology
+illustration or diagram is embedded on the website. The About introduction
+and current-product article also mention ontology; AI-assisted business
+interpretation remains a future ambition. Normal edits use SPIP article fields.

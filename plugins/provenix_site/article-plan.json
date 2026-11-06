@@ -434,6 +434,42 @@
       }
     },
     {
+      "role": "ontology",
+      "section": "service_catalogue",
+      "label": "Data ontology",
+      "fields": {
+        "surtitre": {
+          "keys": ["ontology_label"],
+          "separator": "\n"
+        },
+        "titre": {
+          "keys": ["ontology_title"],
+          "separator": "\n"
+        },
+        "chapo": {
+          "keys": ["ontology_summary"],
+          "separator": "\n"
+        },
+        "texte": {
+          "keys": ["ontology_bullet1", "ontology_bullet2", "ontology_bullet3", "ontology_bullet4"],
+          "separator": "\n\n",
+          "list": true
+        },
+        "soustitre": {
+          "keys": ["ontology_card_title"],
+          "separator": "\n"
+        },
+        "descriptif": {
+          "keys": ["ontology_card_summary"],
+          "separator": "\n"
+        },
+        "nom_site": {
+          "keys": ["ontology_link"],
+          "separator": "\n"
+        }
+      }
+    },
+    {
       "role": "services_closing",
       "section": "services",
       "label": "Closing message",
