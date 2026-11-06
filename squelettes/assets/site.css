@@ -201,11 +201,18 @@ nav a[aria-current]:after {
   align-items: center;
 }
 .hero .eyebrow {
-  font-size: 10px;
-  letter-spacing: 1.8px;
   display: flex;
   align-items: center;
   gap: 9px;
+}
+/* Page introductions share one readable over-title treatment. */
+.hero .eyebrow,
+.page-hero .eyebrow {
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  font-weight: 650;
+  margin-bottom: 18px;
 }
 .status-dot {
   width: 7px;
