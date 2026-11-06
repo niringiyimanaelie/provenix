@@ -123,9 +123,6 @@ p {
   letter-spacing: -1px;
   line-height: 29px;
 }
-.brand-dot {
-  color: var(--purple);
-}
 nav {
   display: flex;
   gap: 32px;
