@@ -98,7 +98,8 @@ function provenix_article_directory($group)
     foreach (provenix_article_plan()["articles"] as $article) {
         if (
             $article["section"] !== $group &&
-            !($group === "services" && $article["section"] === "service_catalogue")
+            !($group === "services" && $article["section"] === "service_catalogue") &&
+            !($group === "home" && $article["section"] === "platform_catalogue")
         ) {
             continue;
         }
@@ -143,6 +144,9 @@ function provenix_migrate_articles()
             continue;
         }
         $parent = $role === "service_catalogue" ? (int) $sections["services"] : 0;
+        if ($role === "platform_catalogue") {
+            $parent = (int) $sections["home"];
+        }
         $sections[$role] = rubrique_inserer($parent, ["titre" => $title, "lang" => "en"]);
         if (!$sections[$role]) {
             throw new RuntimeException("Could not create section: " . $role);

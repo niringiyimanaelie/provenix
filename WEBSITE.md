@@ -16,7 +16,7 @@ Direct link: `http://localhost:8080/provenix/ecrire/?exec=provenix_contenu`.
 
 The editor has **Home**, **About us**, **Services**, **Contact**, and **Shared content** tabs. Each page tab now lists its **native SPIP articles**. Click an article to open its normal SPIP editor. The remaining fields below the article list are page settings for labels, illustration text, and form behavior.
 
-You can also go directly to **Edit → Sections** or **Edit → Articles**. There are four main sections (Home, About Us, Services, Contact), plus **Our services** inside Services. The 22 original content blocks are published articles associated with the existing webmaster. Article revision history is enabled.
+You can also go directly to **Edit → Sections** or **Edit → Articles**. There are four main sections (Home, About Us, Services, Contact), plus **Our services** inside Services and **SQL platforms** inside Home. The 22 original content blocks are published articles associated with the existing webmaster. Article revision history is enabled.
 
 Native articles use SPIP's normal publication workflow. Changes to a published article appear publicly after saving. Drafts remain unpublished until their status is changed to published. Service articles appear on both the homepage cards and Services page only when published. Adding a service article to **Services → Our services** adds another entry automatically; article IDs are not hardcoded in the public templates.
 
@@ -120,5 +120,25 @@ appropriate page separately. Shared service articles say "Home and Services".
 
 These labels are private editing guidance, separate from the public article
 title. Labels are defined in the plugin's `article-plan.json`; they do not
-require an additional database field. The guide covers the 22 mapped articles.
+require an additional database field. The guide covers the 25 mapped articles, including three SQL platforms.
 New service articles still appear in SPIP's normal article list.
+
+## SQL platform logos on the homepage
+
+Go to **Edit > Sections > Home > SQL platforms**. Each published platform article
+supplies its name (Title) and image (Article logo in the sidebar). The Home tab
+of **Website content** also links to the three initial platform articles.
+
+The row currently contains Snowflake, Databricks, and MotherDuck. MotherDuck is
+the cloud service built on DuckDB. Replace an image with SPIP's standard Article
+logo controls. The template sizes logos consistently without recoloring or
+stretching them. Without a logo, the article title appears instead. Draft or
+unpublished platform articles are hidden; publishing another article in this
+section adds another item. Sorting uses SPIP's numeric title prefix, then ID.
+
+These are native SPIP articles and logo documents: database records store names,
+publication status, and media links, while the actual files live under `IMG/`.
+Back up and transfer both the database and `IMG/` when deploying. The plugin's
+`media/` folder holds the initial official assets and source credits for a new
+installation. Reinstalling does not overwrite logos that editors have changed
+or deliberately removed after initial setup.

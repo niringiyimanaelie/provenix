@@ -70,15 +70,14 @@
       <section class="compatibility">
         <div class="wrap compatibility-inner">
           <span>[(#VAL{sommaire_034}|provenix_texte)]<br><strong>[(#VAL{sommaire_035}|provenix_texte)]</strong></span>
-          <div>
-            <span class="platform-symbol snow">❄</span> [(#VAL{sommaire_036}|provenix_texte)]
-          </div>
-          <div>
-            <span class="platform-symbol">▱</span> [(#VAL{sommaire_037}|provenix_texte)]
-          </div>
-          <div>
-            <span class="platform-symbol duck">●</span> [(#VAL{sommaire_038}|provenix_texte)]
-          </div>
+          <BOUCLE_platforms(ARTICLES){id_rubrique=#VAL{platform_catalogue}|provenix_section}{par num titre,id_article}>
+            <div class="platform">
+              [(#LOGO_ARTICLE|oui)
+                <img class="platform-logo" src="[(#LOGO_ARTICLE|extraire_attribut{src})]" alt="[(#TITRE|textebrut|attribut_html)]" loading="lazy" decoding="async">
+              ]
+              [(#LOGO_ARTICLE|non)<span class="platform-name">[(#TITRE)]</span>]
+            </div>
+          </BOUCLE_platforms>
           <p>
             [(#VAL{sommaire_039}|provenix_texte)]<br>
             [(#VAL{sommaire_040}|provenix_texte)]

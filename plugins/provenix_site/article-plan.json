@@ -4,7 +4,8 @@
     "about": "About Us",
     "services": "Services",
     "contact": "Contact",
-    "service_catalogue": "Our services"
+    "service_catalogue": "Our services",
+    "platform_catalogue": "SQL platforms"
   },
   "articles": [
     {
@@ -513,6 +514,39 @@
         "texte": {
           "keys": ["contact_013"],
           "separator": "\n\n"
+        }
+      }
+    },
+    {
+      "role": "platform_snowflake",
+      "section": "platform_catalogue",
+      "label": "Snowflake logo and name",
+      "fields": {
+        "titre": {
+          "keys": ["sommaire_036"],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "platform_databricks",
+      "section": "platform_catalogue",
+      "label": "Databricks logo and name",
+      "fields": {
+        "titre": {
+          "keys": ["sommaire_037"],
+          "separator": "\n"
+        }
+      }
+    },
+    {
+      "role": "platform_motherduck",
+      "section": "platform_catalogue",
+      "label": "MotherDuck logo and name",
+      "fields": {
+        "titre": {
+          "keys": ["sommaire_038"],
+          "separator": "\n"
         }
       }
     }

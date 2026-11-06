@@ -458,15 +458,11 @@ nav a[aria-current]:after {
   align-items: center;
   gap: 9px;
 }
-.platform-symbol {
-  font-size: 32px;
-}
-.snow {
-  font-size: 34px;
-  color: #958da1;
-}
-.duck {
-  font-size: 22px;
+.platform-logo {
+  display: block;
+  width: 150px;
+  height: 38px;
+  object-fit: contain;
 }
 .compatibility-inner > p {
   font-size: 10px;
@@ -1100,12 +1096,9 @@ textarea {
   .compatibility-inner > div {
     font-size: 15px;
   }
-  .platform-symbol,
-  .snow {
-    font-size: 25px;
-  }
-  .duck {
-    font-size: 18px;
+  .platform-logo {
+    width: 130px;
+    height: 34px;
   }
   .section {
     padding: 58px 0;

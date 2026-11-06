@@ -38,12 +38,12 @@ function reset_test_cache()
 }
 
 $mapping = lire_config("provenix_articles", []);
-check_article(count($mapping) === 22, "22 native articles mapped to the existing website");
+check_article(count($mapping) === count(provenix_article_plan()["articles"]), "All website articles are mapped");
 check_article(
     (int) sql_countsel(
         "spip_articles",
         sql_in("id_article", array_values($mapping)) . " AND statut='publie'",
-    ) === 22,
+    ) === count($mapping),
     "All migrated articles are published",
 );
 check_article(

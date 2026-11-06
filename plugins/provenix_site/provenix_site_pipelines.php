@@ -33,6 +33,9 @@ function provenix_site_affiche_milieu($flux)
         $location = $article['section'] === 'service_catalogue'
             ? 'Home and Services'
             : provenix_article_plan()['sections'][$article['section']];
+        if ($article['section'] === 'platform_catalogue') {
+            $location = 'Home - SQL platforms';
+        }
         $label = htmlspecialchars($article['label'], ENT_QUOTES, 'UTF-8');
         // SPIP already escapes ampersands; do not encode those entities twice.
         $url = htmlspecialchars(
@@ -52,6 +55,9 @@ function provenix_site_affiche_milieu($flux)
                 ? '<p><strong>Appears on:</strong> ' . htmlspecialchars($location, ENT_QUOTES, 'UTF-8') . '</p>'
                 : '<p>Choose the part of this page you want to edit.</p>')
             . '<ul>' . implode('', $items) . '</ul>'
+            . ($object === 'article' && strpos($location, 'SQL platforms') !== false
+                ? '<p>Change the name with <strong>Edit this article</strong>. Replace the image using <strong>Article logo</strong> in the sidebar.</p>'
+                : '')
             . '<p><small>These labels are only visible in the administration area.</small></p></div>';
         $marker = '<!--affiche_milieu-->';
         $flux['data'] = strpos($flux['data'], $marker) !== false

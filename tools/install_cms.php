@@ -52,5 +52,5 @@ if (!$GLOBALS["visiteur_session"]) {
     throw new RuntimeException("An existing SPIP webmaster is required.");
 }
 $GLOBALS["visiteur_session"]["restreint"] = "";
-provenix_site_upgrade("provenix_site_base_version", "1.1.0");
+provenix_site_upgrade("provenix_site_base_version", "1.2.0");
 echo "Website content plugin installed.\n";
