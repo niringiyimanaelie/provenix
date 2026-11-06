@@ -38,7 +38,7 @@
     "key": "about_005",
     "group": "about",
     "section": "Page introduction",
-    "label": "Paragraph: We’re building Provenix to make the relationships and logic behind data visible, unde",
+    "label": "Page introduction",
     "type": "textarea"
   },
   {
@@ -73,7 +73,7 @@
     "key": "about_010",
     "group": "about",
     "section": "Page content",
-    "label": "Paragraph: When a new analyst joins, a calculation changes, or a number looks wrong, teams have ",
+    "label": "Why shared context matters",
     "type": "textarea"
   },
   {
@@ -164,14 +164,14 @@
     "key": "about_023",
     "group": "about",
     "section": "Page content",
-    "label": "Paragraph: Provenix is in active development. Today, our work centers on SQL analysis, column-le",
+    "label": "Current capabilities",
     "type": "textarea"
   },
   {
     "key": "about_024",
     "group": "about",
     "section": "Page content",
-    "label": "Paragraph: Our longer-term ambition is to connect that technical foundation to richer business c",
+    "label": "Shared understanding and future enhancements",
     "type": "textarea"
   },
   {
@@ -815,7 +815,7 @@
     "key": "services_033",
     "group": "services",
     "section": "Page content",
-    "label": "Text: Engineers",
+    "label": "First audience label",
     "type": "text"
   },
   {
@@ -829,7 +829,7 @@
     "key": "services_035",
     "group": "services",
     "section": "Page content",
-    "label": "Text: Analysts",
+    "label": "Second audience label",
     "type": "text"
   },
   {
@@ -850,7 +850,7 @@
     "key": "services_038",
     "group": "services",
     "section": "Closing message",
-    "label": "Paragraph: Provenix is actively evolving. Get in touch to discuss your SQL environment, ask abou",
+    "label": "Walkthrough invitation",
     "type": "textarea"
   },
   {
@@ -1060,7 +1060,7 @@
     "key": "sommaire_053",
     "group": "home",
     "section": "Page content",
-    "label": "Paragraph: Bring engineers and analysts into the same conversation with an interactive view of h",
+    "label": "Visual discovery summary",
     "type": "text"
   },
   {
