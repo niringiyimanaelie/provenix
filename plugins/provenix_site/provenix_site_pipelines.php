@@ -44,12 +44,12 @@ function provenix_site_affiche_milieu($flux)
             'UTF-8',
             false
         );
-        $items[] = '<li style="margin:8px 0"><a href="' . $url . '"><strong>' . $label
+        $items[] = '<li><a href="' . $url . '"><strong>' . $label
             . '</strong></a></li>';
     }
     if ($items) {
         $heading = $object === 'article' ? 'Website placement' : 'Edit page content';
-        $guide = '<div class="provenix-editor-guide" style="margin:20px 0;padding:16px;background:#f5f0ff;border-left:4px solid #7650cf">'
+        $guide = '<div class="provenix-editor-guide">'
             . '<h2>' . $heading . '</h2>'
             . ($object === 'article'
                 ? '<p><strong>Appears on:</strong> ' . htmlspecialchars($location, ENT_QUOTES, 'UTF-8') . '</p>'

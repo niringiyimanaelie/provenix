@@ -1,0 +1,12 @@
+.provenix-editor-guide {
+  margin: 20px 0;
+  padding: 16px;
+  background: #f5f0ff;
+  border-left: 4px solid #7650cf;
+}
+.provenix-editor-guide li {
+  margin: 8px 0;
+}
+.formulaire_editer_provenix fieldset {
+  margin-bottom: 24px;
+}

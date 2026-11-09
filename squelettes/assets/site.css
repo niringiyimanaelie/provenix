@@ -292,6 +292,7 @@ nav a[aria-current]:after {
   line-height: 1.35;
 }
 .lineage-stages {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1.08fr);
   align-items: center;
@@ -299,6 +300,9 @@ nav a[aria-current]:after {
 .lineage-source-stage,
 .lineage-transform-stage {
   min-width: 0;
+}
+.lineage-transform-stage {
+  grid-column: 3;
 }
 .lineage-stage-label {
   display: flex;
@@ -321,6 +325,7 @@ nav a[aria-current]:after {
   padding: 10px 0;
   background: #fff;
   font-size: 11px;
+  overflow-wrap: anywhere;
 }
 .data-node.secondary {
   margin-top: 12px;
@@ -348,41 +353,25 @@ nav a[aria-current]:after {
   float: right;
   color: #a38bbd;
 }
-[data-lineage-field] {
-  border-left: 2px solid transparent;
-  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
-}
 .lineage-arrows {
-  position: relative;
-  height: 146px;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   color: #ac91cd;
-  margin-top: 20px;
+  overflow: visible;
+  pointer-events: none;
 }
-.lineage-arrows > span {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  border-right: 1px solid currentColor;
-  left: 0;
-  top: 0;
-  border-top: 1px solid currentColor;
-}
-.lineage-arrows > span:nth-child(2) {
-  top: 50%;
-  border-top: 0;
-  border-bottom: 1px solid currentColor;
-}
-.lineage-arrows b {
-  position: absolute;
-  right: 0;
-  top: calc(50% - 13px);
-  font-size: 21px;
-  font-weight: 400;
+.lineage-arrows path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 .transformed {
   border-color: #c9b5e3;
   background: #fcfaff;
-  transition: border-color 180ms ease, box-shadow 180ms ease;
 }
 .transformation-steps {
   margin: 0;
@@ -413,14 +402,8 @@ nav a[aria-current]:after {
   font-size: 9px;
   color: #91829d;
 }
-.output-path {
-  text-align: center;
-  color: #ae91cf;
-  font-size: 25px;
-  line-height: 36px;
-  margin-left: 48%;
-}
 .lineage-report {
+  margin-top: 24px;
   border: 1px solid #dfd2ee;
   background: #fcfaff;
   border-radius: 8px;
@@ -429,45 +412,12 @@ nav a[aria-current]:after {
 .lineage-report .lineage-stage-label {
   margin-bottom: 5px;
 }
-.lineage-trace-button,
-.lineage-report-fallback {
-  font: inherit;
+.lineage-report-title {
+  display: block;
+  padding-bottom: 11px;
   font-size: 13px;
   font-weight: 650;
   color: #332244;
-}
-.lineage-trace-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
-  padding: 3px 0 11px;
-  text-align: left;
-  background: transparent;
-  border: 0;
-  cursor: pointer;
-}
-.lineage-trace-button[hidden],
-.lineage-hint[hidden],
-.lineage-report-fallback[hidden] {
-  display: none;
-}
-.lineage-trace-button > span:last-child {
-  color: #9463cd;
-  font-size: 20px;
-}
-.lineage-trace-button:hover {
-  color: var(--purple);
-}
-.lineage-trace-button:focus-visible {
-  outline: 2px solid var(--purple);
-  outline-offset: 4px;
-  border-radius: 2px;
-}
-.lineage-report-fallback {
-  display: block;
-  padding-bottom: 11px;
 }
 .lineage-report table {
   width: 100%;
@@ -498,18 +448,12 @@ nav a[aria-current]:after {
 .net-value {
   color: #7141b6;
   font-weight: 700;
-  background: #f1eafa;
 }
 .lineage-calculation {
   margin: 13px 0 0;
   font-size: 11px;
   color: #776385;
   line-height: 1.6;
-}
-.lineage-hint {
-  margin: 4px 0 0;
-  font-size: 10px;
-  color: #9a8aa7;
 }
 .visual-bottom {
   margin-top: 17px;
@@ -518,19 +462,6 @@ nav a[aria-current]:after {
   color: #988ca3;
   font-size: 7px;
   letter-spacing: 1px;
-}
-.lineage-visual.is-tracing [data-lineage-field] {
-  background: #efe5fb;
-  border-left-color: #9360d0;
-  color: #7141b6;
-}
-.lineage-visual.is-tracing .transformed {
-  border-color: #a77ad7;
-  box-shadow: 0 0 0 3px #f4eefa;
-}
-.lineage-visual.is-tracing .lineage-arrows,
-.lineage-visual.is-tracing .output-path {
-  color: #8d57ca;
 }
 @media (max-width: 400px) {
   .lineage-visual {
@@ -557,12 +488,6 @@ nav a[aria-current]:after {
   }
   .lineage-report table {
     font-size: 10px;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  [data-lineage-field],
-  .transformed {
-    transition: none;
   }
 }
 .compatibility {
@@ -920,7 +845,13 @@ nav a[aria-current]:after {
   position: relative;
 }
 .check-list li:before {
-  content: "✓";
+  content: "";
+  width: 5px;
+  height: 9px;
+  top: 2px;
+  border: solid #9670b8;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
   position: absolute;
   left: 0;
   color: #9670b8;
@@ -1390,4 +1321,14 @@ textarea {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* Vector arrows avoid platform-specific emoji rendering. */
+.arrow-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  pointer-events: none;
 }

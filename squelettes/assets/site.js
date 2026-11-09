@@ -27,18 +27,40 @@ document.querySelector("#contact-form")?.addEventListener("submit", (event) => {
   status.textContent = settings.emailStatus.replaceAll("{email}", settings.contactEmail);
 });
 
-// The example stays readable without JavaScript; enhance it with metric tracing.
+// Follow actual card geometry when text wraps, fonts load, or the viewport changes.
 document.querySelectorAll("[data-lineage-demo]").forEach((demo) => {
-  const button = demo.querySelector(".lineage-trace-button");
-  const fallback = demo.querySelector(".lineage-report-fallback");
-  const hint = demo.querySelector(".lineage-hint");
-  if (!button) return;
-  button.hidden = false;
-  if (fallback) fallback.hidden = true;
-  if (hint) hint.hidden = false;
-  button.addEventListener("click", () => {
-    const tracing = button.getAttribute("aria-pressed") !== "true";
-    button.setAttribute("aria-pressed", String(tracing));
-    demo.classList.toggle("is-tracing", tracing);
-  });
+  const stages = demo.querySelector(".lineage-stages");
+  const connector = demo.querySelector(".lineage-arrows");
+  const path = connector?.querySelector("path");
+  const sources = [...demo.querySelectorAll(".lineage-source-stage .data-node")];
+  const destination = demo.querySelector(".lineage-transform-stage .data-node");
+  if (!stages || !connector || !path || sources.length === 0 || !destination) return;
+
+  const updateConnectors = () => {
+    const bounds = stages.getBoundingClientRect();
+    if (!bounds.width || !bounds.height) return;
+    const target = destination.getBoundingClientRect();
+    const targetX = target.left - bounds.left;
+    const targetY = target.top - bounds.top + target.height / 2;
+    const nodes = sources.map((node) => node.getBoundingClientRect());
+    const sourceX = Math.max(...nodes.map((node) => node.right)) - bounds.left;
+    const joinX = (sourceX + targetX) / 2;
+    const sourceYs = nodes.map((node) => node.top - bounds.top + node.height / 2);
+    connector.setAttribute("viewBox", `0 0 ${bounds.width} ${bounds.height}`);
+    path.setAttribute("d", [
+      ...sourceYs.map((y) => `M ${sourceX} ${y} H ${joinX}`),
+      `M ${joinX} ${Math.min(...sourceYs, targetY)} V ${Math.max(...sourceYs, targetY)}`,
+      `M ${joinX} ${targetY} H ${targetX}`,
+      `M ${targetX - 5} ${targetY - 4} L ${targetX} ${targetY} L ${targetX - 5} ${targetY + 4}`,
+    ].join(" "));
+  };
+
+  updateConnectors();
+  if (window.ResizeObserver) {
+    const observer = new ResizeObserver(updateConnectors);
+    [stages, ...sources, destination].forEach((node) => observer.observe(node));
+  } else {
+    window.addEventListener("resize", updateConnectors);
+  }
+  document.fonts?.ready.then(updateConnectors);
 });

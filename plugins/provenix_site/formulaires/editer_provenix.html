@@ -12,7 +12,7 @@
   <form action="#ENV{action}" method="post">
     #ACTION_FORMULAIRE
     <BOUCLE_sections(DATA){source tableau,#ENV{sections}}>
-      <fieldset style="margin-bottom:24px">
+      <fieldset>
         <legend>[(#CLE|entites_html)]</legend>
         <div class="editer-groupe">
           <BOUCLE_fields(DATA){source tableau,#VALEUR}>

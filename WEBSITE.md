@@ -153,10 +153,10 @@ not customer or company figures. If changing amounts, keep sales minus refunds
 equal to net revenue for each region.
 
 The three-stage layout is in `squelettes/sommaire.html`, with styling in
-`assets/site.css`. The report button toggles a visual trace through source
-fields and the transformation using `assets/site.js`; it works with keyboard
-activation and exposes its pressed state. Without JavaScript the full example
-and calculation remain readable. The row values are presentation content,
+`assets/site.css`. The report is a static destination table, without selection
+controls or trace highlighting. Source connectors use `assets/site.js` only
+to follow card geometry. Without JavaScript the full example and calculation
+remain readable. The row values are presentation content,
 not a live query or connection to the separate product application.
 
 The previous diagram settings were retained in the database under
@@ -167,7 +167,7 @@ The previous diagram settings were retained in the database under
 **Services > Our services > Data ontology exploration** is a native published
 article. Its subtitle, description, and link label populate the fourth Home
 capability card; its title, introduction, and body populate the text-only
-Services section at `spip.php?page=services#ontology`. Find it through the
+Services section at `/services#ontology`. Find it through the
 Services tab of **Edit > Website content** as **Data ontology**.
 
 The copy describes implemented search, column types, extracted formulas,
@@ -175,3 +175,32 @@ transformation categories, and upstream/downstream exploration. No ontology
 illustration or diagram is embedded on the website. The About introduction
 and current-product article also mention ontology; AI-assisted business
 interpretation remains a future ambition. Normal edits use SPIP article fields.
+
+## Public routes and shared icons
+
+Marketing navigation uses `/about`, `/services`, and `/contact`, relative to
+SPIP's configured public site address. The root `.htaccess` rewrites these
+paths internally to their SPIP page templates; existing query-string URLs
+remain valid. The administration area remains at `/ecrire/`.
+
+Decorative arrows use the shared `inc-icon.html` include and the external
+`assets/icons.svg` symbol file. Link labels remain editable native article
+fields and contain words only; icons are part of the theme. Styles and
+behaviour live in `assets/site.css` and `assets/site.js`. The head include
+uses SPIP's `timestamp` filter to invalidate browser asset caches when those
+files change.
+
+The lineage connectors measure card bounds and update through ResizeObserver
+and font-load notifications, so text wrapping does not detach their endpoints.
+Without JavaScript the source, transformation, and report content remains
+readable. Diagram amounts and labels continue to come from CMS content.
+
+Temporary previews, upload archives, browser profiles, and repair scripts are
+not project source. Database safety copies belong outside the web project.
+
+Plugin schema 1.4.1 removes the retired trace instruction and migrates the
+three existing link labels to text without decorative arrow suffixes. The
+migration preserves custom wording and is safe to rerun. Apply the normal
+plugin database upgrade when deploying this version; copying theme files
+alone does not migrate existing hosted content. Private editor styles use
+SPIP's `prive/style_prive_plugin_provenix_site.css` discovery mechanism.

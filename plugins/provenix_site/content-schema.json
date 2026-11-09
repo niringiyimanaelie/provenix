@@ -178,7 +178,7 @@
     "key": "about_025",
     "group": "about",
     "section": "Page content",
-    "label": "Link label: Share your perspective →",
+    "label": "Link label: Share your perspective",
     "type": "text"
   },
   {
@@ -857,7 +857,7 @@
     "key": "services_039",
     "group": "services",
     "section": "Closing message",
-    "label": "Link label: Talk to us →",
+    "label": "Link label: Talk to us",
     "type": "text"
   },
   {
@@ -1172,7 +1172,7 @@
     "key": "sommaire_069",
     "group": "home",
     "section": "Page content",
-    "label": "Link label: Discover our approach ↗",
+    "label": "Link label: Discover our approach",
     "type": "text"
   },
   {
@@ -1509,13 +1509,6 @@
     "group": "home",
     "section": "Illustrative lineage demo",
     "label": "Plain-language explanation",
-    "type": "text"
-  },
-  {
-    "key": "lineage_hint",
-    "group": "home",
-    "section": "Illustrative lineage demo",
-    "label": "Interaction instruction",
     "type": "text"
   },
   {

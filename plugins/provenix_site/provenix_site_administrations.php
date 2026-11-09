@@ -13,6 +13,7 @@ function provenix_site_upgrade($nom_meta_base_version, $version_cible)
             ["provenix_migrate_articles"],
             ["provenix_install_platform_logos"],
             ["provenix_install_lineage_demo"],
+            ["provenix_clean_diagram_content"],
         ],
         "1.1.0" => [["provenix_migrate_articles"]],
         "1.2.0" => [
@@ -22,6 +23,7 @@ function provenix_site_upgrade($nom_meta_base_version, $version_cible)
         ],
         "1.3.0" => [["provenix_install_lineage_demo"]],
         "1.4.0" => [["provenix_prepare_ontology"], ["provenix_migrate_articles"]],
+        "1.4.1" => [["provenix_clean_diagram_content"]],
     ]);
 }
 
@@ -144,4 +146,44 @@ function provenix_prepare_ontology()
         }
     }
     ecrire_config("provenix_contenu", $content);
+}
+
+/** Decorative arrows belong to the theme; preserve the editor's label wording. */
+function provenix_clean_diagram_content()
+{
+    include_spip("inc/config");
+    include_spip("inc/autoriser");
+    include_spip("action/editer_article");
+    $bindings = provenix_article_bindings();
+    foreach (["sommaire_069", "about_025", "services_039"] as $key) {
+        $role = $bindings[$key]["role"];
+        $id = (int) lire_config("provenix_articles/" . $role, 0);
+        if (!$id) {
+            continue;
+        }
+        $label = sql_getfetsel("nom_site", "spip_articles", "id_article=" . $id);
+        if ($label === false) {
+            continue;
+        }
+        $clean = preg_replace('/\s*[\x{2190}-\x{21FF}]\x{FE0F}?\s*$/u', '', $label);
+        if ($clean === null || $clean === $label) {
+            continue;
+        }
+        autoriser_exception("modifier", "article", $id);
+        try {
+            $error = article_modifier($id, ["nom_site" => $clean]);
+            if ($error) {
+                throw new RuntimeException((string) $error);
+            }
+        } finally {
+            autoriser_exception("modifier", "article", $id, false);
+        }
+    }
+    $content = lire_config("provenix_contenu", []);
+    if (array_key_exists("lineage_hint", $content)) {
+        unset($content["lineage_hint"]);
+        ecrire_config("provenix_contenu", $content);
+    }
+    include_spip("inc/invalideur");
+    suivre_invalideur("1");
 }
