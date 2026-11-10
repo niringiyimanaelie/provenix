@@ -35,7 +35,7 @@ Native articles use SPIP's normal publication workflow. Changes to a published a
 
 For service bullet points, put one item per line using SPIP's `-* ` list notation. About Us and the homepage story render the full article body, including new paragraphs and SPIP text formatting. Some short design blocks have separate title/subtitle fields to preserve the original line breaks. Contact information uses two introduction lines separated by a newline. The design remains theme-controlled.
 
-**Shared content** contains navigation, footer, the shared contact banner, search description, and the public contact email. Changing that email updates visible addresses, email links, and the contact form recipient together. Contact contains the form labels, topics, placeholders, and email-draft messages. The `{email}` token in the status message is replaced with the current contact address.
+**Shared content** contains navigation, footer, the shared contact banner, search description, and the public contact email. Changing that email updates visible addresses, email links, and the contact form recipient together. Contact contains the form labels, topics, placeholders, and server-side submission feedback.
 
 Main content is stored in **`spip_articles`**, organized by **`spip_rubriques`**, with authors in `spip_auteurs_liens` and history in SPIP revision tables. Shared settings remain in `spip_meta` under `provenix_contenu`. The `provenix_articles` and `provenix_sections` settings map design slots to native object IDs. The pre-migration configuration is retained as `provenix_contenu_avant_articles` for recovery, but is never used as a public fallback. Unpublished articles do not fall back to old settings.
 
@@ -61,7 +61,7 @@ The original one-time template conversion scripts have been retired after the CM
 - `python tools/verify_cms.py articles`: compares public markup, text, and attributes to the snapshots captured immediately before the native-article migration in ignored `tmp/`. These snapshots are local verification artifacts and are not included in Git.
 - `node --check squelettes/assets/site.js`: JavaScript syntax check.
 
-The contact form validates inputs then opens the visitor's mail client with a draft addressed to `info@getprovenix.com`. It does not send or store submissions on the server. Actual server delivery would require a configured mail service and a protected SPIP form handler.
+The contact form uses SPIP's signed CVT submission and server-side mail API. Local messages are captured in Mailpit; hosted delivery must be configured and tested separately. See the server-side contact form section below.
 
 Fonts use Google Fonts with local system-font fallbacks. No application credentials, customer claims, or invented testimonials are included. The homepage lineage diagram is explicitly illustrative.
 
@@ -204,3 +204,68 @@ migration preserves custom wording and is safe to rerun. Apply the normal
 plugin database upgrade when deploying this version; copying theme files
 alone does not migrate existing hosted content. Private editor styles use
 SPIP's `prive/style_prive_plugin_provenix_site.css` discovery mechanism.
+
+
+## Server-side contact form (plugin 1.5.0)
+
+The Contact page renders the native `#FORMULAIRE_PROVENIX_CONTACT` CVT form.
+It posts to SPIP and calls its `envoyer_mail` API; submitting never opens the
+visitor's email app. The recipient is the existing `contact_email` CMS setting.
+The sender uses SPIP's configured `email_envoi`, falling back to the public
+contact address; the visitor's validated address is Reply-To, never the sender
+or recipient. Use an address on the site's domain as the configured sender.
+
+Labels, feedback, and subject/body labels remain editable in Website content.
+The 1.5.0 migration updates only the former default mail-app instructions,
+adds missing feedback settings, and removes the retired browser-only status.
+Custom wording and native article content are preserved. No message table is
+created: messages are passed to mail delivery, not stored in the website DB.
+
+Validation runs server-side as well as in HTML. Native signed CVT arguments,
+a signed two-hour ticket, a honeypot, and a
+five-attempts-per-ten-minutes IP limit reduce abuse. Atomic file locks prevent
+concurrent duplicate submissions; ticket and content hashes suppress repeats
+for two hours. Transport failure leaves the form editable and does not mark
+it as sent. A successful result means the mail transport accepted the message,
+not a guarantee that a remote inbox has delivered it. Email credentials, if
+SMTP is configured later, belong in the host's private configuration, never
+in browser code or source defaults.
+
+Rate metadata lives under SPIP's protected `tmp/provenix-contact/` directory;
+it contains hashes and times, not visitor messages or raw addresses. SPIP's
+daily cron task removes expired files. If using a trusted reverse proxy,
+configure SPIP's client-IP handling correctly before relying on IP limits.
+
+For local testing, a portable Mailpit inbox is installed outside the project
+under XAMPP. It listens only on `127.0.0.1:25` (SMTP) and
+`http://127.0.0.1:8025` (inbox), with external relay disabled. Existing local
+PHP SMTP settings use localhost port 25; no hosting credentials are required.
+Messages stay in this local capture inbox. Start with `mailpit --smtp=127.0.0.1:25 --listen=127.0.0.1:8025 --smtp-relay-all=false` before testing; its
+stopped state correctly causes the form to show a delivery error.
+
+Local checks: `php tools/test_contact.php` covers validation, failed delivery,
+retry, duplicates, and rate limits. `python tools/test_contact_http.py` exercises
+the real signed CVT POST and captured envelope/headers. Both require Mailpit
+and refuse to target a hosted site. Do not deploy the tools or local Mailpit.
+Hosted delivery must be tested separately after configuring server mail.
+
+### SMTP transport (Facteur 5.5.0)
+
+The Provenix plugin requires the official Facteur plugin (unmodified release from
+https://plugins.spip.net/facteur.html). Contact messages use its structured
+`from`, `nom_envoyeur`, `repondre_a`, and `nom_repondre_a` API fields.
+
+Local Facteur settings in the local database use SMTP 127.0.0.1, port 25,
+no authentication and no encryption, exclusively for loopback Mailpit. These
+settings are not part of deployment archives.
+
+On hosting, activate Facteur and Provenix, then open
+`ecrire/?exec=configurer_facteur`. Select SMTP and enter the secure outgoing
+server and port shown in cPanel > Email Accounts > Connect Devices. Enable
+authentication with the full mailbox username and enter its password privately
+in the SPIP configuration form. Use matching TLS settings, and set the sender
+to the business mailbox and site name. Do not copy localhost SMTP settings to
+hosting, disable TLS verification, commit credentials, or import the local DB.
+Test real delivery and confirm Reply addresses only the visitor before declaring
+the hosted configuration complete. Previously received malformed messages will
+not be repaired by changing the sender configuration.

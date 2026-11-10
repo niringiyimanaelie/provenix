@@ -1,15 +1,17 @@
 <paquet
   prefix="provenix_site"
   categorie="edition"
-  version="1.4.1"
+  version="1.5.1"
   etat="stable"
   compatibilite="[4.4.0;4.4.*]"
-  schema="1.4.1"
+  schema="1.5.0"
   logo="images/provenix.svg">
   <nom>Provenix website content</nom>
   <auteur>Provenix</auteur>
   <licence>GPL</licence>
   <pipeline nom="autoriser" inclure="provenix_site_autorisations.php" />
   <pipeline nom="affiche_milieu" inclure="provenix_site_pipelines.php" />
+  <pipeline nom="taches_generales_cron" inclure="provenix_site_pipelines.php" />
   <menu nom="provenix_contenu" titre="provenix_site:menu" parent="menu_edition" icone="images/provenix.svg" action="provenix_contenu" />
+  <necessite nom="facteur" compatibilite="[5.5.0;5.*]" />
 </paquet>

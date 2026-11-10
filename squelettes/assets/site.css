@@ -1002,11 +1002,6 @@ textarea {
   line-height: 1.7;
   margin: 14px 0 0;
 }
-#contact-status {
-  padding: 12px;
-  background: #f2ecfa;
-  color: #69488f;
-}
 .skip {
   position: fixed;
   left: 15px;
@@ -1331,4 +1326,39 @@ textarea {
   flex-shrink: 0;
   vertical-align: -0.125em;
   pointer-events: none;
+}
+
+.contact-form .reponse_formulaire {
+  padding: 12px;
+  margin: 18px 0;
+  border-radius: 5px;
+  overflow-wrap: anywhere;
+}
+.contact-form .reponse_formulaire_ok {
+  background: #f2ecfa;
+  color: #69488f;
+}
+.contact-form .reponse_formulaire_erreur {
+  background: #fff1f1;
+  color: #8e3030;
+}
+.contact-form .field-error {
+  display: block;
+  margin-top: 6px;
+  color: #8e3030;
+  font-size: 12px;
+}
+.contact-form [aria-invalid="true"] {
+  border-color: #b34b4b;
+}
+.contact-form button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+.contact-honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
 }

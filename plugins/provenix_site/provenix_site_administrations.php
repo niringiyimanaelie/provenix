@@ -14,6 +14,7 @@ function provenix_site_upgrade($nom_meta_base_version, $version_cible)
             ["provenix_install_platform_logos"],
             ["provenix_install_lineage_demo"],
             ["provenix_clean_diagram_content"],
+            ["provenix_install_contact_form"],
         ],
         "1.1.0" => [["provenix_migrate_articles"]],
         "1.2.0" => [
@@ -24,6 +25,7 @@ function provenix_site_upgrade($nom_meta_base_version, $version_cible)
         "1.3.0" => [["provenix_install_lineage_demo"]],
         "1.4.0" => [["provenix_prepare_ontology"], ["provenix_migrate_articles"]],
         "1.4.1" => [["provenix_clean_diagram_content"]],
+        "1.5.0" => [["provenix_install_contact_form"]],
     ]);
 }
 
@@ -186,4 +188,28 @@ function provenix_clean_diagram_content()
     }
     include_spip("inc/invalideur");
     suivre_invalideur("1");
+}
+
+/** Replace only former default mail-app instructions; retain editorial changes. */
+function provenix_install_contact_form()
+{
+    include_spip('inc/config');
+    $seed = json_decode(file_get_contents(__DIR__ . '/initial-content.json'), true);
+    $old = json_decode('{"contact_015":"We\u2019ll prepare an email in your preferred mail app.","contact_030":"Prepare email","contact_031":"This form opens your email app. Your message is only sent when you choose Send there."}', true);
+    $content = lire_config('provenix_contenu', []);
+    $bindings = provenix_article_bindings();
+    foreach ($seed as $key => $value) {
+        if (isset($bindings[$key])) {
+            continue;
+        }
+        if (!array_key_exists($key, $content) && strpos($key, 'contact_') === 0) {
+            $content[$key] = $value;
+        } elseif (isset($old[$key]) && $content[$key] === $old[$key]) {
+            $content[$key] = $value;
+        }
+    }
+    unset($content['email_status']);
+    ecrire_config('provenix_contenu', $content);
+    include_spip('inc/invalideur');
+    suivre_invalideur('1');
 }

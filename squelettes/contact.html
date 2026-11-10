@@ -39,55 +39,7 @@
               </p>
             </div>
           </div>
-          <form id="contact-form" class="contact-form">
-            <h3>
-              [(#VAL{contact_014}|provenix_texte)]
-            </h3>
-            <p>
-              [(#VAL{contact_015}|provenix_texte)]
-            </p>
-            <div class="form-row">
-              <label>
-                [(#VAL{contact_016}|provenix_texte)]
-                <input
-                  name="name"
-                  autocomplete="name"
-                  required
-                  maxlength="100"
-                  placeholder="[(#VAL{contact_017}|provenix_texte)]">
-              </label>
-              <label>
-                [(#VAL{contact_018}|provenix_texte)]
-                <input
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                  maxlength="200"
-                  placeholder="[(#VAL{contact_019}|provenix_texte)]">
-              </label>
-            </div>
-            <label>
-              [(#VAL{contact_020}|provenix_texte)]<span class="optional">[(#VAL{contact_021}|provenix_texte)]</span>
-              <input
-                name="company"
-                autocomplete="organization"
-                maxlength="160"
-                placeholder="[(#VAL{contact_022}|provenix_texte)]">
-            </label>
-            <label>
-              [(#VAL{contact_023}|provenix_texte)]<select name="topic"><option>[(#VAL{contact_024}|provenix_texte)]</option><option>[(#VAL{contact_025}|provenix_texte)]</option><option>[(#VAL{contact_026}|provenix_texte)]</option><option>[(#VAL{contact_027}|provenix_texte)]</option></select>
-            </label>
-            <label>
-              [(#VAL{contact_028}|provenix_texte)]<textarea name="message" required minlength="10" maxlength="4000" rows="5" placeholder="[(#VAL{contact_029}|provenix_texte)]"></textarea>
-            </label>
-            <button class="button" type="submit">[(#VAL{contact_030}|provenix_texte)] <span><INCLURE{fond=inc-icon,direction=up-right}></span></button>
-            <p class="form-note">
-              [(#VAL{contact_031}|provenix_texte)]
-            </p>
-            <p id="contact-status" role="status" hidden>
-            </p>
-          </form>
+          #FORMULAIRE_PROVENIX_CONTACT
         </div>
       </section>
     </main>

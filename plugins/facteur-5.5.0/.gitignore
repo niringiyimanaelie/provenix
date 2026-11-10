@@ -1,0 +1,15 @@
+/vendor/
+/composer.phar
+/composer.lock
+/phpcs.xml
+/phpstan.neon
+/.php_cs.cache
+/.php_cs.txt
+/.phpunit.cache
+/phpunit.xml
+/var
+!/var/tmp/file.unknown
+!/var/tmp/test.zip
+!/var/tmp/tar/test.tar
+!/var/tmp/tgz/test.tar.gz
+/rector.php

@@ -276,7 +276,7 @@
     "key": "contact_015",
     "group": "contact",
     "section": "Contact details and form",
-    "label": "Paragraph: We’ll prepare an email in your preferred mail app.",
+    "label": "Form introduction",
     "type": "text"
   },
   {
@@ -381,14 +381,14 @@
     "key": "contact_030",
     "group": "contact",
     "section": "Contact details and form",
-    "label": "Text: Prepare email",
+    "label": "Submit button label",
     "type": "text"
   },
   {
     "key": "contact_031",
     "group": "contact",
     "section": "Contact details and form",
-    "label": "Paragraph: This form opens your email app. Your message is only sent when you choose Send there.",
+    "label": "Form delivery note",
     "type": "text"
   },
   {
@@ -1288,13 +1288,6 @@
     "type": "text"
   },
   {
-    "key": "email_status",
-    "group": "contact",
-    "section": "Form behavior",
-    "label": "Contact form status message ({email} uses your public email)",
-    "type": "textarea"
-  },
-  {
     "key": "lineage_accessibility",
     "group": "home",
     "section": "Illustrative lineage demo",
@@ -1516,6 +1509,97 @@
     "group": "home",
     "section": "Illustrative lineage demo",
     "label": "Example disclaimer",
+    "type": "text"
+  },
+  {
+    "key": "contact_success",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Success",
+    "type": "text"
+  },
+  {
+    "key": "contact_failure",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Failure",
+    "type": "text"
+  },
+  {
+    "key": "contact_invalid",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Invalid",
+    "type": "text"
+  },
+  {
+    "key": "contact_required",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Required",
+    "type": "text"
+  },
+  {
+    "key": "contact_too_long",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Too long",
+    "type": "text"
+  },
+  {
+    "key": "contact_invalid_email",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Invalid email",
+    "type": "text"
+  },
+  {
+    "key": "contact_short_message",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Short message",
+    "type": "text"
+  },
+  {
+    "key": "contact_correct_errors",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Correct errors",
+    "type": "text"
+  },
+  {
+    "key": "contact_expired",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Expired",
+    "type": "text"
+  },
+  {
+    "key": "contact_spam",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Spam",
+    "type": "text"
+  },
+  {
+    "key": "contact_rate_limit",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Rate limit",
+    "type": "text"
+  },
+  {
+    "key": "contact_duplicate",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Duplicate",
+    "type": "text"
+  },
+  {
+    "key": "contact_honeypot",
+    "group": "contact",
+    "section": "Form feedback",
+    "label": "Honeypot",
     "type": "text"
   }
 ]

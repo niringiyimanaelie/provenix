@@ -1,0 +1,27 @@
+<paquet
+	prefix="facteur"
+	categorie="communication"
+	version="5.5.0"
+	etat="stable"
+	compatibilite="[4.1.0;4.*]"
+	logo="facteur-64.svg"
+	schema="2.0.0"
+	documentation="https://contrib.spip.net/Facteur"
+>
+
+	<nom>Facteur</nom>
+	<!-- Il distribue votre courrier -->
+
+	<auteur>Collectif SPIP</auteur>
+	<credit lien="https://github.com/PHPMailer/PHPMailer">PHPMailer</credit>
+
+	<pipeline nom="facteur_lister_methodes_mailer" action="" />
+	<pipeline nom="facteur_pre_envoi" action="" />
+
+	<pipeline nom="ieconfig_metas" inclure="facteur_ieconfig_metas.php" />
+	<pipeline nom="formulaire_fond" inclure="facteur_fonctions.php" />
+
+	<procure nom="phpmailer" version="6.5.3" />
+
+	<menu nom="configurer_facteur" titre="facteur:configuration_facteur" parent="menu_configuration" icone="images/facteur-16.svg" />
+</paquet>

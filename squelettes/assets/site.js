@@ -16,15 +16,18 @@ document.addEventListener("keydown", (event) => {
 document.querySelectorAll("nav [data-page]").forEach((link) => {
   if (link.dataset.page === document.body.dataset.page) link.setAttribute("aria-current", "page");
 });
-document.querySelector("#contact-form")?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const body = `${settings.emailName} ${data.get("name")}\n${settings.emailAddress} ${data.get("email")}\n${settings.emailCompany} ${data.get("company") || settings.emailEmptyCompany}\n\n${data.get("message")}`;
-  const subject = `${settings.emailSubject} ${data.get("topic")}`;
-  window.location.href = `mailto:${encodeURIComponent(settings.contactEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  const status = document.querySelector("#contact-status");
-  status.hidden = false;
-  status.textContent = settings.emailStatus.replaceAll("{email}", settings.contactEmail);
+// Keep native form submission, including when JavaScript is unavailable.
+document.querySelector("#contact-message-form")?.addEventListener("submit", (event) => {
+  event.currentTarget.querySelector('button[type="submit"]').disabled = true;
+  event.currentTarget.setAttribute("aria-busy", "true");
+});
+window.addEventListener("pageshow", () => {
+  const feedback = document.querySelector(".formulaire_provenix_contact .reponse_formulaire");
+  if (feedback) requestAnimationFrame(() => feedback.focus());
+  const form = document.querySelector("#contact-message-form");
+  if (!form) return;
+  form.querySelector('button[type="submit"]').disabled = false;
+  form.removeAttribute("aria-busy");
 });
 
 // Follow actual card geometry when text wraps, fonts load, or the viewport changes.

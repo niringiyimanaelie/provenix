@@ -10,11 +10,11 @@ require "ecrire/inc_version.php";
 include_spip("inc/plugin");
 // Force directory discovery after adding a new plugin to an existing install.
 clearstatcache();
-[$infos, $list, $invalid] = liste_plugin_valides(["provenix_site"], true);
+[$infos, $list, $invalid] = liste_plugin_valides(["facteur-5.5.0", "provenix_site"], true);
 if ($invalid) {
     throw new RuntimeException(json_encode($invalid));
 }
-ecrire_plugin_actifs(["provenix_site"], false, "ajoute");
+ecrire_plugin_actifs(["facteur-5.5.0", "provenix_site"], false, "ajoute");
 $active = unserialize($GLOBALS["meta"]["plugin"] ?? "a:0:{}");
 if (!isset($active["PROVENIX_SITE"])) {
     throw new RuntimeException("Provenix plugin did not activate.");
@@ -52,5 +52,5 @@ if (!$GLOBALS["visiteur_session"]) {
     throw new RuntimeException("An existing SPIP webmaster is required.");
 }
 $GLOBALS["visiteur_session"]["restreint"] = "";
-provenix_site_upgrade("provenix_site_base_version", "1.4.1");
+provenix_site_upgrade("provenix_site_base_version", "1.5.0");
 echo "Website content plugin installed.\n";

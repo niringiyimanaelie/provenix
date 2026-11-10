@@ -66,3 +66,10 @@ function provenix_site_affiche_milieu($flux)
     }
     return $flux;
 }
+
+/** Remove expired anti-abuse metadata; messages themselves are never stored here. */
+function provenix_site_taches_generales_cron($tasks)
+{
+    $tasks['provenix_contact_cleanup'] = 86400;
+    return $tasks;
+}
